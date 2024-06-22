@@ -1,387 +1,387 @@
 school_ID,school_name,n_test_takers,mean_reading_score,mean_math_score,mean_writing_score
-2495147690,Olson-Windler,479,433,207,528
-3266844432,Auer-Weissnat,1024,787,342,277
-1917259123,Huels-Mraz,817,309,733,415
-6155616949,Mitchell-Greenholt,968,690,463,633
-8064771730,"Jast, Nitzsche and Bruen",311,571,451,316
-3171929376,Torphy and Sons,19,433,503,210
-9761207994,"Aufderhar, Rosenbaum and Mueller",23,489,229,597
-6554862889,Wilkinson-Renner,600,578,427,261
-5115948826,"Johnson, Oberbrunner and Kirlin",221,365,415,333
-0258561998,"Stiedemann, Mante and Schaefer",128,719,299,523
-0316733121,Ward-Beer,514,619,742,728
-0065289331,Jacobs-Marks,56,324,376,793
-2910853446,Kreiger-Nader,178,359,503,274
-4829615222,Streich-Abshire,526,305,777,330
-4019607230,"Murray, Cartwright and Muller",549,412,757,758
-1136471413,Grant-Medhurst,517,784,349,753
-8640122938,Schamberger Inc,347,761,355,446
-3247031022,Bergstrom and Sons,90,778,563,775
-7787281790,Aufderhar-Reichel,992,237,693,323
-4864374414,"Towne, Daniel and Hilll",711,753,576,208
-9421147634,King-Spinka,358,386,584,622
-3936256160,Orn and Sons,289,557,349,463
-7278175232,"Schaefer, Howell and Dickens",548,591,491,314
-9276312587,Koepp-Bergnaum,1000,401,505,709
-3924723508,Schamberger-Daniel,593,354,555,788
-6658879273,Hahn-Powlowski,609,581,395,597
-8620402889,Cartwright and Sons,225,689,514,456
-7978826503,Legros Inc,489,311,256,385
-2088551441,Renner-Kuphal,742,762,523,251
-7075773356,Gibson Inc,235,557,544,445
-1234151324,Funk-Collins,267,377,614,629
-6230428407,"Johnson, Schmitt and Terry",630,610,782,422
-1192867467,Reilly-Gusikowski,324,701,777,790
-6696926100,Schmidt-Abernathy,779,756,292,648
-2237502536,Jerde LLC,173,384,309,432
-6669108850,Goodwin-Franecki,72,653,254,253
-8995366427,Ratke Inc,204,572,739,534
-7837294041,Zulauf Inc,853,583,302,233
-6751827032,"Reynolds, Leffler and Wolf",820,717,775,382
-0171943449,Schowalter-Breitenberg,850,575,212,404
-1183215401,"Wisozk, Kessler and Balistreri",195,368,485,416
-7597158661,Jerde LLC,792,758,300,522
-2574389921,Kohler-Dooley,968,486,342,755
-2646017162,"Shields, Auer and Boyer",671,728,758,758
-7347462789,Schiller-Konopelski,263,526,431,655
-4853219552,"Medhurst, Strosin and Gislason",772,258,258,276
-7569362268,Murazik-Lynch,754,757,589,595
-9893259525,Beahan LLC,381,560,243,781
-4425526929,"O'Hara, Dietrich and Hintz",114,620,339,617
-0965270572,"Effertz, Hayes and Douglas",661,608,277,619
-2469877679,"Pfannerstill, McClure and Fisher",969,569,518,265
-5324663166,Denesik-Bayer,180,333,259,521
-1770355855,Bins and Sons,411,797,580,383
-0242732852,Medhurst LLC,820,742,368,375
-1953997570,Bechtelar-Champlin,795,539,580,235
-1192613864,"Stamm, Durgan and Botsford",214,294,277,388
-8528115194,"Nolan, Orn and Spencer",783,732,288,323
-3130855599,O'Connell-Dickinson,382,462,278,204
-8984293067,Pollich-Marks,918,770,258,521
-8860594324,"Bashirian, Fay and Hickle",401,605,617,208
-4040435664,"Wisoky, Waters and Cremin",758,741,527,443
-1178691373,"Anderson, Sporer and Stanton",995,285,783,286
-2535422069,"Kohler, Greenholt and Zboncak",678,530,303,800
-3652134907,Lubowitz Inc,864,790,590,357
-3373834651,Sauer Inc,795,687,227,279
-4392252507,Doyle and Sons,268,476,417,576
-9035933931,Rolfson-Cruickshank,605,382,508,548
-9405095633,Rempel-Spencer,806,463,390,280
-7030648242,Howe-Hodkiewicz,11,398,223,229
-5530401937,Strosin-Zboncak,256,469,706,579
-8405567968,Hermiston-Kihn,854,267,480,357
-0973160500,"Nikolaus, Koch and Orn",64,331,475,434
-4401949528,Pfeffer Inc,899,679,413,750
-6993920344,"Spencer, Abshire and Gulgowski",150,408,719,668
-7641136249,"Johnston, Hirthe and Block",527,623,494,480
-0511583249,Langosh-Cremin,110,779,579,453
-9978568956,"Olson, Bashirian and Bauch",642,652,298,448
-6591384278,Ritchie Group,583,715,326,531
-1864414839,Mayert-Kris,768,489,591,780
-6168567267,"Harvey, Runolfsdottir and McClure",32,393,259,297
-3908392861,Howe-Johnston,543,433,623,276
-0482022647,Kemmer Group,912,579,577,212
-7484217867,"Reinger, Davis and Macejkovic",860,673,527,286
-1343920698,"Quitzon, Koch and Sanford",601,406,645,378
-3252902613,Bailey Inc,40,494,634,328
-7175630549,O'Reilly-Strosin,180,700,212,653
-5379253172,Roob and Sons,520,313,606,696
-8648393124,Altenwerth-Hermiston,845,654,486,414
-2865549739,Hand-White,902,778,602,300
-1384204954,Wilderman-Kemmer,368,577,266,735
-9836561382,Hilll LLC,290,274,277,631
-9914922015,"Blick, Johnston and Rodriguez",220,275,425,642
-5323965061,Schiller-Adams,1017,455,509,243
-8178892766,"Williamson, O'Keefe and Haley",524,579,660,230
-0692733361,Hessel and Sons,557,272,269,390
-3686453185,Cartwright-Bauch,413,785,646,587
-5142433521,Keeling Group,935,392,205,482
-8420264911,Mueller-Hermann,706,247,497,579
-9847139849,Parisian-Kuphal,830,641,257,627
-4630211772,Walker-Witting,387,647,543,294
-4313479112,Cole-Ullrich,621,376,574,260
-2228797812,"Mosciski, Quigley and Gusikowski",15,636,668,314
-7844081546,"Schinner, Keebler and Blick",115,504,768,330
-4524604979,Hermiston-Kilback,757,325,481,460
-8112852154,Steuber-Crist,1017,659,701,679
-0099697653,Thompson-Pagac,94,416,596,375
-4343449254,Bernier Group,880,274,676,785
-5628550272,Lueilwitz-Nader,675,360,479,295
-6036490283,"Streich, Torphy and Huels",747,366,554,247
-0513792171,"Rippin, Morar and Beer",823,382,511,549
-9920722979,"Treutel, Carter and Hane",859,264,317,430
-4801304796,Schultz Inc,273,612,308,346
-1582589194,Deckow Group,1029,781,311,689
-2215936886,"MacGyver, Greenholt and Klocko",19,776,546,457
-4586912022,Mayer Group,26,603,329,424
-3987909838,"Sawayn, Hahn and Parisian",577,415,390,739
-6264407593,"Weissnat, Kunde and Wisoky",911,550,592,710
-5917180954,"Rice, Flatley and Brakus",470,583,440,602
-7721085950,Batz Inc,846,753,351,687
-3614192989,"Schmitt, Wisoky and Kautzer",880,263,311,502
-6046347564,Von-Heathcote,498,234,460,203
-6550462665,"Murphy, Mohr and Wyman",785,661,337,482
-4464871186,Stehr Group,777,228,215,229
-0474613054,Welch-Greenfelder,724,276,485,574
-7244695047,Zboncak Inc,389,788,347,506
-6636674059,"Bailey, Aufderhar and Davis",623,625,450,624
-5751589882,Pouros Group,988,380,570,286
-0234638214,"Keebler, Koepp and Windler",7,674,573,731
-0254960243,Abshire Inc,135,298,335,563
-5330967910,Ernser Inc,136,240,550,498
-3825439704,Lockman-Dicki,97,480,356,593
-1530626218,Beahan and Sons,153,321,435,686
-4989863410,Fisher Inc,922,512,273,486
-3926668709,Hessel-Bauch,182,740,456,312
-5273710464,Rath LLC,987,538,665,367
-7363620814,Prohaska-Koch,410,704,637,241
-5485496040,Littel LLC,103,734,520,560
-1398521302,"Bednar, Kub and Stroman",756,766,547,401
-0978937139,Sporer Inc,584,286,533,231
-8842217506,Klein LLC,799,238,607,408
-1389921034,"Stokes, Toy and Torphy",873,710,266,335
-3557160041,"Von, Kohler and Langosh",205,501,753,442
-5113222909,Fay-Friesen,493,463,629,728
-8480635991,Konopelski-Kuvalis,332,552,471,702
-3523500133,"Murazik, Hand and Gerhold",182,414,630,403
-5594248560,"Sanford, Beatty and Renner",361,729,507,243
-3431610471,Monahan-Mitchell,723,411,775,429
-6347040700,"Quitzon, Pfannerstill and Dickinson",1033,221,364,642
-2268186431,Rath Group,108,529,216,332
-2010189892,Raynor-Pfannerstill,1042,477,759,531
-6428590573,"Block, Kling and Shanahan",534,374,466,644
-8519650007,"Monahan, Green and O'Reilly",784,519,766,797
-6573645561,Mertz-Stracke,514,534,422,316
-1256706876,Runolfsson-Stoltenberg,132,770,463,254
-9090083111,King LLC,389,435,633,225
-8038764668,"Weber, Willms and Lubowitz",26,298,429,351
-8078217544,"Thompson, Lesch and Schmitt",220,728,697,637
-0056613237,Heaney Inc,380,245,368,474
-6410424264,Koss-Christiansen,692,464,568,739
-3700170416,"O'Connell, Boyle and Mann",230,713,431,654
-4796213961,Brakus-Boyer,193,777,584,275
-4819028898,"Mayer, Shields and Waelchi",361,372,488,617
-1595666133,Marquardt Group,238,755,282,565
-2471569323,Thompson-Cronin,298,663,722,507
-2376645824,"Hagenes, Koch and Feeney",515,587,691,569
-8511729631,"Swaniawski, Mann and Johns",347,655,793,789
-3643061633,Rutherford Inc,1026,315,667,577
-0889956359,"Hyatt, Rempel and Cole",317,560,643,750
-9080441228,Kirlin Inc,122,731,219,342
-0967872677,Feeney and Sons,667,647,227,776
-0206218184,"Gottlieb, Schulist and King",447,322,372,463
-4169067487,Herman LLC,366,231,799,665
-0635775735,Mann LLC,540,452,397,398
-1162442395,Prohaska and Sons,650,605,765,494
-4954591503,"Brakus, Baumbach and Hansen",253,256,747,545
-5602969462,"Schulist, Murphy and Veum",61,416,737,643
-1117488489,Pfannerstill-Marks,180,353,637,220
-7103457298,"Lakin, Swift and Aufderhar",204,305,543,454
-1811261108,"Mertz, Wintheiser and Kihn",21,237,447,569
-1689686502,Hodkiewicz-McClure,977,492,459,440
-8477913676,Goodwin-Ankunding,275,258,375,516
-4359749163,"Lynch, Stoltenberg and Grimes",220,554,639,260
-4550873280,"Heaney, Lindgren and Schmitt",56,735,703,248
-8509304955,"Keebler, Padberg and Paucek",856,753,355,338
-9941790280,Lubowitz-Johnson,466,288,670,657
-9327555481,Wilderman-Tillman,150,577,791,752
-2339185092,Hayes-Hickle,70,258,797,333
-6562623146,Schinner-Hamill,135,346,576,561
-4684410463,"Sawayn, Reichel and Volkman",112,434,543,760
-4885118301,Wisoky-Zboncak,548,714,344,675
-4102985069,"Bode, Herman and Bogisich",14,374,745,207
-6397117200,"Ernser, Jones and Lueilwitz",19,212,595,702
-3498999796,Von-Skiles,980,395,493,488
-0189913010,"Huels, Hickle and Dietrich",983,442,723,286
-3089421992,Rempel Inc,835,691,796,507
-6435794391,"Donnelly, Ebert and Von",129,602,595,766
-7281914997,"Kozey, Will and Marks",861,394,725,706
-1786148234,Toy-Nolan,227,543,346,285
-2485027242,"Raynor, Jaskolski and Pollich",568,754,617,509
-1660115043,Marvin-Streich,330,515,796,615
-1286666465,Hahn Group,88,266,434,572
-4263101766,"Fay, Ebert and Balistreri",380,707,402,523
-1406488461,Kassulke-Langworth,407,337,582,433
-0886368820,Rippin-Terry,359,234,485,431
-2300150409,Huels-Roob,217,640,244,215
-8091115571,"Schroeder, Smitham and Hauck",592,565,244,490
-4110283736,Koss Inc,307,432,379,233
-5158119635,Rosenbaum and Sons,741,383,544,353
-6471475543,Ziemann Inc,535,242,753,790
-4226708261,"Konopelski, Cummings and Abshire",272,426,282,789
-6970228975,Boyer-Tillman,1038,468,515,597
-5612199481,"Bartoletti, Ryan and Koss",136,446,771,632
-3117637605,"Wuckert, Ernser and Kuvalis",963,713,203,509
-0742775526,"Parisian, Gislason and Hackett",184,595,732,323
-5873110735,Hodkiewicz-Volkman,379,393,694,601
-1632084198,"Wuckert, Stiedemann and Reynolds",472,709,416,570
-3614032779,Huel-Hermiston,1027,343,440,681
-8083068179,Hermiston-Kessler,677,216,577,601
-6294640024,Douglas Group,694,340,777,337
-7270659206,"Russel, Bradtke and Zboncak",306,785,709,600
-1714847330,"Wehner, Wilkinson and Senger",784,343,487,542
-5496531977,Rice LLC,1046,748,623,604
-1356642950,Langosh-Mosciski,226,366,665,250
-4344717619,"Bayer, Nikolaus and Wilderman",856,694,571,792
-8769995087,Bruen-Champlin,443,338,559,380
-7536599986,Lang LLC,1022,308,524,408
-6634774811,Schinner LLC,677,607,631,450
-2291517171,Hoeger-Mosciski,493,634,590,388
-1200783840,"Wolf, Lang and Windler",116,251,585,400
-1308495943,Durgan Group,353,237,572,425
-1847063888,Blanda-Ryan,771,245,690,492
-9105367441,Jast-Grimes,288,257,766,399
-8633429411,Parker Group,748,346,744,319
-9663300493,Buckridge-Conn,350,728,520,277
-3727789875,"Bosco, Ernser and Marvin",370,740,695,669
-5634162246,"Howe, McKenzie and Hodkiewicz",978,422,736,614
-0464056934,Skiles-Walsh,209,661,471,405
-0115681779,Beer-Trantow,481,271,548,645
-7556415147,Mitchell-Smitham,311,361,697,486
-5889139878,Homenick-Roob,110,382,553,472
-8932057168,Hammes Group,968,325,720,680
-3633169741,Murphy and Sons,78,685,723,454
-6866941601,Robel-Berge,971,505,450,556
-8954489192,McCullough-Mayert,621,332,548,410
-2368922237,"Yundt, Hansen and Hirthe",243,781,690,735
-2552607039,"Ledner, Welch and Shields",14,369,777,249
-8790625889,"Stamm, Weissnat and Adams",270,552,326,322
-2716870632,"Breitenberg, Metz and Parisian",294,400,347,369
-2477777734,O'Conner-Wolff,603,488,800,606
-3674855461,"Kub, Harvey and Wilderman",496,767,641,449
-8627754217,Brekke-Towne,397,785,439,799
-5991090173,Thiel Inc,284,347,330,633
-1502201968,"Haley, Ankunding and Mertz",493,589,706,239
-4516243717,"Dietrich, Steuber and McLaughlin",391,356,668,617
-2702961916,Weber Group,36,217,275,766
-5722295159,"Hamill, Murray and Tremblay",666,526,415,609
-5430282812,Hammes Inc,28,443,507,256
-0748807721,Schulist Group,576,289,364,343
-0369187326,Brakus-Conn,442,330,320,345
-7753470426,Shanahan-Kautzer,844,367,407,361
-8001051196,"Glover, Bogan and Grimes",21,727,368,223
-2605897648,Waelchi-Leffler,912,679,588,594
-5215510938,Turner Inc,481,639,215,616
-7833427829,"Gottlieb, Toy and McKenzie",342,786,239,603
-5694588401,"Lind, Langworth and Padberg",325,797,438,800
-9456765334,Douglas-Romaguera,603,244,637,670
-2466253720,Schuster Inc,305,517,269,236
-4081642583,Rolfson-Wunsch,627,385,538,598
-7186225241,"Fahey, Kulas and Gusikowski",747,712,569,682
-4779695686,"Runte, Muller and Greenfelder",769,392,528,225
-0639388949,"Herzog, Hoeger and Ruecker",526,659,395,520
-0811163164,"Kris, Kemmer and O'Reilly",872,776,454,279
-2640340476,McKenzie Group,602,541,569,779
-2725487013,Adams-Huel,845,486,419,412
-0718819756,Jones Group,224,300,463,558
-6586784808,Huels-Wintheiser,66,781,696,243
-1934221678,"Altenwerth, Senger and Krajcik",771,477,763,650
-2082071677,"Fadel, Howe and Wolf",74,304,397,685
-9473194838,Spencer Group,165,677,668,626
-5050824931,"MacGyver, Armstrong and Greenholt",148,456,298,238
-7407879532,Huel Inc,385,296,736,314
-7794694701,Cormier-Hudson,266,342,359,554
-3151902138,Schaefer LLC,441,365,669,522
-5047304728,Cole and Sons,125,758,217,402
-4123664237,Johnson LLC,98,495,563,467
-4273704455,Harber LLC,386,775,558,553
-4838111126,"Hills, Marks and Schuppe",372,376,332,294
-1321247060,"Steuber, Roberts and Leffler",393,558,633,785
-3047816808,King-Mosciski,918,410,314,625
-8874035918,"Donnelly, Jerde and Rohan",738,321,541,420
-3109480824,Turner and Sons,823,422,503,203
-1861230761,Bode-Hirthe,165,423,470,210
-6804023323,Goyette-Stiedemann,173,747,767,790
-5883565700,"Lebsack, Kerluke and Brown",466,582,215,288
-7975753475,"Klein, Pagac and Nitzsche",811,492,445,549
-9414669906,Schinner-Frami,509,584,392,737
-3727242779,Erdman Group,674,607,423,664
-0917344308,Torphy-Wilderman,99,228,659,480
-5686406723,Leannon LLC,249,310,405,734
-7938133884,"Kerluke, Rutherford and Klocko",68,331,613,652
-1340594994,Brekke-Conn,98,253,306,297
-3652996127,Dietrich-Kuvalis,671,623,547,520
-9804598116,Glover-Schowalter,28,601,649,601
-5907665025,Rogahn Inc,369,623,230,279
-6892388566,"Boyer, Little and Huel",426,797,547,252
-2054039829,"Wunsch, Veum and Waelchi",674,491,503,770
-2495058736,Heller-Davis,599,447,204,218
-8789298624,"Cassin, Hyatt and Schroeder",801,705,242,622
-7189586733,Dicki-Reichel,9,553,332,370
-2539712479,Smitham Inc,191,323,228,648
-6063278362,Rogahn LLC,495,532,225,530
-6989733837,Zieme-Gleason,573,597,210,275
-1417948477,Towne-Willms,505,602,663,618
-1435203208,Hyatt and Sons,233,445,777,304
-0896860817,Smitham-Herman,251,530,793,745
-7842936390,"Ondricka, Hauck and Rowe",512,384,434,202
-8282897043,"MacGyver, Howell and Nolan",811,441,730,784
-0750153083,"Schneider, Stoltenberg and Kunze",884,700,684,695
-2774242193,"Walker, Kling and Johns",539,311,509,482
-5643697378,Champlin and Sons,370,380,536,472
-5343381154,Gottlieb-Howell,156,527,746,611
-0919125689,Price-Dach,565,512,476,633
-3681529442,"Cremin, Lockman and Zemlak",570,505,406,665
-3096220506,Stroman-Abernathy,893,523,374,603
-5899981679,Gottlieb and Sons,553,490,580,411
-7092010594,"McKenzie, Nolan and Marquardt",757,270,456,577
-2491035499,"Steuber, Erdman and Ruecker",1025,379,357,233
-8662661955,"Zboncak, Legros and Effertz",306,629,796,733
-2049482493,Lynch and Sons,620,564,757,608
-7436555227,Schiller-Powlowski,928,549,751,725
-9181766297,Swaniawski and Sons,618,531,234,771
-9738339065,Shields-Farrell,241,248,240,640
-1257097741,VonRueden Inc,174,690,688,710
-2065658983,"Cronin, Torphy and Mitchell",305,210,420,604
-0815657846,Kling and Sons,454,366,298,476
-3844571361,Wehner LLC,965,361,432,366
-4852749299,Dibbert LLC,815,383,345,771
-9838605832,Mosciski LLC,17,327,306,523
-8859638461,"Ruecker, King and Dibbert",136,318,501,550
-1328644650,Thiel-Spinka,921,643,276,446
-9628590081,"Tillman, Runte and Konopelski",443,548,497,246
-8504330729,"Hermiston, Stroman and Rau",387,234,420,736
-1966313438,"Bauch, Sawayn and Flatley",791,513,778,579
-9024355214,Towne-Fritsch,47,519,473,471
-7365165367,Lubowitz-Metz,363,639,759,413
-3426254603,Hyatt-Barton,57,327,336,236
-9840431188,Bauch and Sons,614,289,761,433
-8674759297,"Lowe, Kling and Schoen",83,372,267,243
-5457265846,"Baumbach, Koss and Cronin",435,418,534,410
-9441354015,"McClure, Okuneva and Walker",935,314,652,236
-3496833874,Padberg-Hand,920,666,470,224
-0942839560,Wolf-Harber,736,376,719,549
-3988244627,Kuphal LLC,707,751,539,424
-3423442913,Bednar Group,31,250,541,638
-4148455593,Turner-Wolf,224,741,407,737
-1824643535,Davis and Sons,902,551,233,563
-0170497283,Bode-Gutmann,816,505,695,775
-0172715830,"Halvorson, Breitenberg and Watsica",993,595,623,279
-5212804558,"Wyman, Aufderhar and Becker",606,516,517,644
-8126890568,Beatty-Murray,226,355,655,732
-2704819092,Swaniawski and Sons,32,227,391,387
-8818683438,Mohr LLC,639,251,329,693
-8478321748,"Pfeffer, Johns and Bechtelar",510,391,287,649
-4292944482,Labadie LLC,220,237,247,793
-8899667586,"Hirthe, Brekke and Barrows",99,273,267,380
-7695210196,Monahan Inc,505,726,544,788
-8771746803,Konopelski-Keebler,121,705,418,771
-5847092008,Volkman Group,152,628,685,630
-6518179996,Feeney-Kihn,391,512,609,490
-6829726298,Gutkowski-Kohler,393,413,318,298
-3122144999,Thiel Group,847,648,585,229
-4916384970,Weber-Huels,148,799,686,248
-2548928128,Legros Inc,448,435,625,432
-4392969835,"Braun, Keebler and Wisoky",400,211,222,735
-3579661701,"Hackett, Anderson and Emard",502,574,545,635
-1721540970,Kuhn LLC,140,626,739,516
-3646088001,"Bins, Kuphal and Streich",716,693,222,777
-6559736652,Stamm and Sons,428,596,306,459
-7680824495,Gerlach-Dicki,421,583,303,512
-4954989477,Upton-Nader,1044,757,454,630
-4758878633,"Rohan, Balistreri and Kuvalis",133,402,373,754
-5548586238,"Wolff, Prohaska and Reinger",930,542,368,378
-1212823745,Schneider Inc,809,792,423,610
-9084030494,Frami-Will,497,618,580,435
-4496391805,Brekke-Barrows,179,556,743,609
-4143868679,Kuphal Inc,257,709,423,306
+95O766,Louisiana State University in Shreveport,996,246,788,580
+86Y764,Ecole Supérieure de Commerce de Pau,596,319,405,668
+55O898,Illinois Benedictine University,903,721,524,698
+86E042,Science University of Tokyo in Yamaguchi,203,544,269,751
+27F967,Illinois Institute of Technology,299,414,466,236
+76A037,Quinnipiac College,774,406,589,606
+28Z164,Livingstone College,671,499,589,375
+70V930,Technical University of Mining and Metallurgy Ostrava,719,632,778,797
+97B396,Haynal Imre University of Health Sciences Budapest,112,351,688,459
+78J757,Universidad Técnica de Oruro,910,248,656,259
+09R104,Universidad México Internacional,909,667,327,226
+08X496,Katholische Fachhochschule Norddeutschland,612,320,750,218
+96Q734,Siam Technology College,260,411,787,262
+11E365,Art University,513,750,394,500
+94I178,People's University of Bangladesh,233,729,330,275
+35W841,Fachhochschule Düsseldorf,620,532,487,523
+71Q706,Tottori University of Environmental Studies,560,629,533,563
+14K875,University of Bridgeport,708,396,467,549
+37L648,"Indian Institute of Technology, Madras",7,381,382,450
+65C331,Universitas Muslim Indonesia,200,720,543,275
+10V401,"Universidad Nacional Experimental de los Llanos Occidentales ""Ezequiel Zamora""",955,690,406,764
+34K867,Tsukuba University,789,436,661,311
+22C376,Universidad de Ciencias y Humanidades,667,430,562,433
+56W911,Francis Marion University,810,575,404,652
+79H360,Patuakhali Science and Technology University,1042,460,511,649
+08K396,"Washington State University, Tri-Cities",996,650,328,349
+06B347,University of Alanta,958,594,786,656
+89B307,McGill University,725,332,535,430
+51Y590,East-West University,585,691,617,226
+76I973,Lebanese American University,321,527,669,366
+67G513,Universitas Pekalongan,815,696,782,756
+89T686,University of Arizona,454,278,742,727
+74D455,Drzavni Univerzitet u Novom Pazaru,834,251,736,222
+27P548,The College of New Jersey,286,515,392,366
+07V943,Institute of Finance,243,596,471,729
+56Z204,Miles College,203,262,600,590
+76R749,Central Mindanao University,1035,709,402,711
+84F200,Universidad Católica de Occidente,329,386,561,549
+92A916,Tokushima Bunri University,1003,779,668,393
+67Y890,Bangalore University,372,243,695,399
+16N674,"South-West University ""Neofit Rilski""",784,363,467,742
+76L039,"University of Wales Institute, Cardiff",878,491,410,761
+17C499,University of Nevada - Las Vegas,50,412,592,236
+28S777,Mekelle University,668,712,750,289
+22E585,L.N. Gumilyov Eurasian National University,689,254,332,354
+40G891,Ueno Gakuen College,728,760,618,498
+24A919,Aga Khan University,141,796,382,240
+12F949,Tartu Health Care College,301,737,624,469
+09H383,Black Hills State University,319,667,539,443
+40O360,Jawaharlal Nehru Agricultural University,25,265,216,528
+51R495,Universidad de Playa Ancha de Ciencias de la Educacion,358,729,486,275
+96F248,Lappeenranta University of Technology,224,221,302,519
+69M754,Chiang Mai Rajabhat University,139,477,771,582
+15U814,Tribhuvan University Kathmandu,1025,208,239,202
+94N713,Mersin University,821,425,204,422
+08Z474,Virginia Intermont College,946,333,732,292
+89J699,Instituto de Enseñanza Superior del Ejército,650,320,671,661
+33V266,Lynchburg College,504,769,560,457
+07N028,University of Great Falls,850,367,228,561
+49J032,University of Canterbury,122,617,502,505
+34V775,Victoria University,821,375,258,739
+44K568,Sumy National Agrarian University,605,675,288,364
+44S584,Universität Bielefeld,248,585,217,316
+44H910,Syracuse University,1021,754,375,225
+73S089,"National Academy of Music ""Pantcho Vladigerov""",249,603,535,743
+86U730,New Economic School,316,446,792,429
+35V071,National Cheng Kung University,196,482,218,766
+43V251,Kobe Design University,534,579,491,735
+59Y774,North Carolina Wesleyan College,948,485,650,702
+89U065,Bethany College Kansas,607,748,219,709
+88H233,"Allahabad Agricultural Institute, Deemed University",495,750,593,672
+97U960,Loras College,14,680,414,674
+27F649,Private College of Dentistry and Pharmacy,446,786,541,303
+27E658,Calvary Bible College,321,275,287,636
+35P699,Sejong University,141,477,620,408
+53U025,Ecole Nationale Supérieure des Mines de Douai,692,435,575,661
+09V143,Rovaniemi University of Applied Sciences,495,747,555,338
+38G691,Université d'Abobo-Adjamé,33,799,551,409
+53X597,Campion College,990,598,477,654
+80Y563,Divine Word College,709,344,471,566
+41H556,Rockhurst College,530,799,434,595
+17W016,Norwegian Teacher Academy for Studies in Religion and Education,647,558,257,626
+62L221,University of Liberia,217,760,471,539
+00C324,Caldwell College,520,698,268,600
+29Y559,Wentworth Institute of Technology,228,410,722,620
+23G042,Universidad Adolfo Ibáñez,713,606,684,242
+11G264,Lutheran Bible Institute of Seattle,970,421,666,323
+68J366,Shonan Institute of Technology,67,204,398,281
+45T202,Griffith College,916,542,611,214
+09T233,Information and Communications University,870,599,638,536
+65K115,The Bahá'í Institute For Higher Education (BIHE),608,383,404,376
+77P895,Gannon University,685,356,365,244
+80P798,National Chiao Tung University,809,734,542,685
+50K900,University of Wyoming,1045,283,302,673
+42J453,Telugu University,640,675,422,699
+53L745,Whitworth College,635,483,707,231
+65S741,Philippine Normal University,437,216,770,682
+87D578,University of Charleston South Carolina,166,753,788,273
+08M943,New Hampshire College,490,798,678,748
+43Y141,Dickinson College,471,514,607,353
+02X316,Capella University,527,291,628,605
+38O011,National Dairy Research Institute,576,583,675,532
+81F169,Universität Linz,201,370,648,718
+55M253,Gulhane Military Medical Academy,770,686,456,690
+45X474,"Fachhochschule Westküste, Hochschule für Wirtschaft und Technik",164,525,448,779
+86V226,Mondragon Univertsitatea,985,470,408,724
+96P638,Leeds Metropolitan University,751,633,207,534
+07D418,University of Health and Science,698,215,568,227
+25W424,Juntendo University,569,591,439,531
+88X442,The New College,170,512,261,596
+60L773,"Curtin University of Technology, Sarawak Campus",429,435,259,244
+45R749,Kurume Institute of Technology,114,538,744,713
+93D132,Ambassador University,743,513,458,576
+15V657,The Rockefeller University,126,715,262,311
+67H965,Karwan Institute of Higher Education,17,429,200,240
+82B458,Rosemont College,13,279,472,494
+38H740,Universität Hildesheim,560,326,669,625
+32I098,"University for Information Science and Technology  ""St. Paul The Apostle"" ",949,415,746,388
+99J407,Sinte Gleska University,929,454,321,596
+54P905,Lincoln University,894,504,480,607
+39V704,La Salle Universities - International Programmes,668,581,530,471
+69C298,St. Bonaventure University,848,246,427,477
+16M407,"Universidad CAECE, Buenos Aires",810,354,349,768
+59X332,Universidad Nacional de Entre Ríos,35,294,734,531
+34R223,Northern Institute of Technology Management (NIT),512,378,694,753
+67Z282,Fresno City College,483,655,457,275
+55R653,Huachiew Chalermprakiet University,819,686,411,371
+03Q447,Anna Maria College,591,551,514,339
+89L876,Rajasthan Technical University,229,219,765,657
+48L743,Ecole Superieure Robert de Sorbon,996,300,248,686
+50V053,Universitas Pelita Harapan,253,431,755,298
+17R403,"Arizona State University, Tempe Campus",247,606,545,434
+66Q165,Universidad Metropolitana,280,553,693,216
+59S752,Halic University,305,563,620,663
+76Z238,University of Agriculture and Veterinary Medicine Iasi,239,445,513,240
+29D332,"Bowling Green State University, Firelands",532,522,587,212
+54L137,Universitas Katolik Soegijapranoto,316,286,499,716
+10P463,Azabu University,639,491,503,766
+30F418,Meijo University,82,736,656,201
+45J561,Rajendra Agricultural University,41,795,215,224
+22N725,Kobe International University,580,675,419,797
+17A594,Universidade de Cruz Alta,658,251,720,529
+19J608,Taiyuan University of Technology,144,394,502,310
+84E296,Kostanai State University,126,791,376,285
+40W941,University of Evansville,197,357,670,473
+23Y916,Princess Nora Bint Abdulrahman University,326,759,465,323
+84J182,"Irish University Business School, Cebu",295,567,572,693
+02J660,"Islamic Azad University, Arak",358,711,500,777
+06E242,Mississippi College,940,593,255,512
+01Y493,Osaka Gakuin University,922,539,524,269
+02C644,Samara State Technical University,231,744,336,309
+32D091,St. Clair College,426,581,400,606
+02W766,South Eastern University of Sri Lanka,874,734,797,536
+58I880,Kigali Institute of Science & Technology,523,276,358,463
+53Z676,Kalmyk State University,877,541,528,492
+86D458,University of Bunkyo,83,755,688,473
+33V973,American Film Institute Center for Advanced Film and Television Studies,322,664,501,775
+99S374,Universidad Atlantida Argentina,262,525,228,692
+47G540,Fachhochschule Frankfurt am Main,56,340,480,455
+78K041,Gondar University,695,402,525,400
+83H345,University of Catania,214,602,290,612
+45T574,American Conservatory of Music,757,491,735,492
+19Y216,Kermanshah University of Medical Sciences,913,773,231,794
+41A684,William Penn College,312,477,298,558
+26S955,Zambian Open University,753,216,364,656
+79L696,Devi Ahilya University of Indore,173,782,526,425
+10T544,Hagerstown Community College,334,703,622,519
+15G812,Elizabethtown College,648,246,635,445
+26P503,Moi University,825,686,251,335
+45D888,Universidad de América Bogotá,110,767,566,442
+83F149,Grantham University,825,447,206,381
+79D356,Zawiya University,84,551,336,227
+52F381,Coe College,323,583,365,486
+22Y725,International Sakharov Environmental University,312,209,683,597
+26N031,Barcelona Graduate School of Economics,793,314,612,693
+84L124,North Island College,983,407,467,369
+78N090,College of Technology at Riyadh,876,502,204,327
+23P088,Universidad Santa María Campus Guayaquil,30,800,278,534
+83J719,Ecole Nationale Supérieure de Chimie de Lille,48,255,698,515
+36G965,Yanbu Technical Institute,1004,778,309,271
+02B749,Veer Kunwar Singh University,741,392,528,695
+88A807,Polytechnic of Namibia,24,799,437,600
+69C585,North Kazakhstan State University,833,585,485,607
+08Z705,University “Pavaresia” Vlore,48,498,785,368
+95Q402,Albany State University,661,271,409,289
+22T214,Universidad Adventista de Centro América,668,393,243,741
+70M133,Texas Lutheran University,786,464,553,760
+87W501,Royal University of Agriculture,729,516,368,676
+87S585,Ecole Nationale de la Météorologie,813,358,512,245
+82T625,Trinity College of Music,565,485,215,717
+16F715,University of Education Hradec Kralove,371,778,464,546
+39Z093,PTPL College,129,358,711,382
+25Q945,Vinnica National Technical University,235,426,626,336
+19T967,Northwest Normal University Lanzhou,345,265,798,387
+58H411,Universität Graz,536,477,768,670
+51F809,University of Bunkyo,618,587,780,576
+97A228,Universidad La Republica,387,298,677,434
+80G772,Universidad Europea de Madrid,702,568,565,532
+03R942,Fukuyama University,533,603,327,730
+06Z823,Bahcesehir University,548,363,422,636
+52L988,Universidade de Mogi das Cruzes,502,293,531,487
+94H437,Elrazi College Of Medical & Technological Sciences,461,725,772,571
+32L651,National School of Political and Administrative Studies Bucharest,768,557,272,688
+64B808,George Brown College,921,539,208,439
+54F183,Kansai Gaidai University,305,554,554,407
+75L483,Langara College,756,297,679,536
+00F421,Punjabi University Patiala,984,717,279,268
+01A467,Instituto Tecnológico de Querétaro,504,492,280,294
+45P547,Nizhny Novgorod State Technical University,151,368,213,794
+54K415,Sojourner-Douglass College,227,765,206,202
+82C486,Davidson College,211,350,660,467
+39S027,Lviv National University Ivan Franko,711,609,503,541
+23O050,"Islamic Azad University, Sanandaj",581,342,220,474
+51O863,Nicholls State University,785,541,733,499
+27Q403,"Federal Polytechnic Bauchi, Nigeria",120,472,736,763
+49R794,Universidad Internacional Menéndez Pelayo,610,283,201,709
+30D094,Hokkaido Information University,476,281,724,695
+03H375,Moi University,558,346,390,635
+85B761,Urmia University,190,504,413,565
+42E157,"Davenport College of Business, Grand Rapids",106,213,559,202
+07N008,Université de Kikwite,877,400,396,680
+20P674,Japan Women's University,549,281,314,346
+64S220,Chowan College,636,552,287,217
+71Q548,Universidad de Morón,261,250,647,410
+61G306,Eckerd College,316,769,458,531
+98A490,National Pedagogical University M. Dragomanov ,778,756,363,539
+15N698,Universidad de Medellín,236,344,484,566
+30I419,University of North West,740,320,276,764
+25N114,EPF Ecole d'Ingénieurs,370,710,798,466
+28J267,University of Brighton,971,332,361,275
+54I029,Universidad Santa Fe,986,307,642,717
+82K597,Reformed Church University,81,695,739,709
+13N461,University of Miami,661,325,204,420
+16C235,Arid Agriculture University,711,539,690,431
+44K982,Universidad Dominicana O&M,328,479,795,686
+44W044,Noakhali University of Science and Technology,954,289,268,352
+45E951,Southern Polytechnic State Univerisity,924,399,409,691
+50U499,Eastern Mediterranean University,613,396,552,360
+05C500,Al Rasheed University College,810,616,675,575
+30X261,Ural Gorkij State University,822,306,334,622
+02I294,College of Computer Science in Lodz,444,516,281,632
+26V472,Trinity Theological Seminary,456,746,708,202
+07K820,Central Institute of Higher Tibetan Studies,920,429,569,320
+01V852,Stavropol State Technical University,641,539,469,589
+01F732,Obninsk State Technical University for Nuclear Power Engineering,77,654,520,605
+22Z146,Copenhagen University,714,638,617,651
+89L532,Elizabethtown College,652,382,362,290
+99Y869,Dong-A University,320,619,421,732
+93J185,Sardar Patel University,501,361,791,777
+66J836,Police Academy in Bratislava,625,288,252,715
+89C373,Wake Forest University,258,475,577,335
+59S555,Ecole Nationale Supérieur d'Ingénieurs de Constructions Aéronautique,217,506,408,320
+48O661,University of Applied Sciences Basel (FHBB ),533,382,548,602
+55D617,"Arizona State University, Polytechnic Campus",91,711,467,241
+07M157,Sumy National Agrarian University,21,313,622,503
+62J146,Kostanai State University,1011,444,361,664
+08V675,European Business School Schloß Reichartshausen,973,249,287,410
+09F410,Université du Littoral Cote d'Opale,566,237,702,372
+55G658,Burapha University,776,677,722,738
+93H121,Université des Sciences et de la Technologie Houari Boumediène,242,514,475,644
+11T713,Zonguldak Karaelmas University,147,567,519,398
+08N854,Spring Hill College,11,438,220,567
+97Y588,Ambo University,633,218,569,425
+74O030,Universidad El Bosque,828,639,332,359
+06K243,Kafr El-Sheikh University,869,687,502,601
+32F499,"University of Mining and Geology ""St. Ivan Rils""",432,218,717,443
+97Z985,Adnan Menderes University,408,212,253,759
+68Z493,Universidad Juárez del Estado de Durango,721,592,743,567
+72K814,Multnomah Bible College,344,439,497,502
+44A142,Grace University,1019,486,534,447
+23B937,Universidad de Guayaquil,357,287,259,505
+80M413,Universidade Estadual do Oeste do Paraná,770,758,219,422
+17U825,Rowan University,983,790,458,605
+75A852,Universidad Nacional de Ingeniería,219,696,676,494
+35P868,Ursuline College,257,774,244,705
+29Y264,"AKAD Hochschulen für Berufstätige, Fachhochschule Leipzig",973,768,525,389
+49V711,Conway School of Landscape Design,959,386,671,790
+58Y582,Kochi University of Technology,673,432,588,311
+40M389,Wuyi University,227,466,750,502
+11T851,University of Resita,198,307,632,315
+10L706,Brandman University,794,693,718,796
+21F844,Tunku Abdul Rahman Chinese College,158,261,765,503
+11G332,Hyogo University of Education,897,683,413,345
+54I482,Karachi Institute of Information Technology,469,609,339,448
+14A874,Azerbaijan Technology University,35,210,556,471
+60G191,Nagoya Women's University,696,447,606,465
+37C773,North Carolina Wesleyan College,614,791,731,440
+30U185,Dokkyo University School of Medicine,819,548,448,456
+03V469,Nicolaus Copernicus University of Torun,564,718,417,495
+68U101,Islamic College for Sciences and Technologies,967,733,692,431
+54H869,Universidad José Cecilio del Valle,8,339,284,578
+77S349,Universiteit Antwerpen Management School,916,781,203,434
+67W901,Universidad Nacional de Villa María,898,301,281,667
+54K921,Universidad de Ciencias y Artes de Chiapas,591,225,797,325
+54K876,Fahad Bin Sultan University,30,279,443,371
+50H447,Perm State Pharmaceutical Academy,375,599,267,715
+26G663,University of Sierra Leone,401,799,345,676
+83F002,Perm State Technical University,849,328,393,511
+15I480,Universität des Saarlandes,355,570,560,543
+46S732,Beijing University of Posts and Telecommunications,536,507,223,736
+64H000,Delft University of Technology,356,268,720,649
+62P133,Collegium Civitas,238,692,493,322
+80X721,Universidad Católica Nordestana,346,248,354,277
+36N413,Rajiv Gandhi Technical University (University of Technology of Madhya Pradesh),49,761,300,489
+11C006,Mount St. Mary's College California,752,670,234,266
+48C347,Academy of Art College,409,585,506,735
+97G237,University of Sharjah,946,482,598,301
+46O319,Oral Roberts University,626,638,701,285
+09H542,Universidade Federal de Ouro Preto,42,394,602,281
+12T286,Urmia University of Technology,792,386,510,412
+85P065,Nizam's Institute of Medical Sciences,340,332,789,489
+52P740,Universidad Autónoma de Campeche,174,534,631,271
+12N776,University of Pennsylvania,440,576,546,268
+86J033,Academy of Economic Studies of Moldova,798,238,687,374
+78E412,Western State College,486,273,685,719
+03B321,Ural Gorkij State University,787,288,547,509
+90A393,Igbinedion University,187,726,411,592
+02I229,Tokyo Institute of Technology,329,721,797,561
+73U859,EVTEK University of Applied Sciences,234,226,441,366
+85C616,Université Virtuelle de Tunis,623,497,396,413
+39P681,Flagler College,789,639,776,755
+05A691,Jacksonville University,592,290,366,428
+05C152,Thiruvalluvar University,553,382,278,535
+72H751,Norton University,110,755,218,664
+61N650,Philosophisch-Theologische Hochschule SVD Sankt Augustin,700,733,573,760
+67X866,Universitas Mataram,495,458,437,431
+99Y224,Hochschule Vechta,585,453,674,373
+30D315,Sam Houston State University,337,599,341,512
+63S659,University of Cape Coast,473,767,347,570
+05V506,Gomel State University Francisk Scarnia,225,243,483,767
+76S433,Toyama Prefectural University,488,762,465,570
+13E519,California College of Arts and Crafts,635,303,367,354
+46W905,Northwest Polytechnical University Xi'an,1047,243,322,463
+02R174,Uganda Christian University,914,763,509,336
+55F252,Zonguldak Karaelmas University,773,376,201,631
+64C659,"City University of New York, Bernard M. Baruch College",375,632,465,370
+87V649,Ashesi University,147,231,762,436
+78D499,Shoreline Community College,160,250,472,640
+39R369,Gollis University,720,468,770,511
+47T565,University of Saskatchewan,543,452,778,683
+10T202,Beijing University of Posts and Telecommunications,28,205,715,675
+94X568,"Universidad Católica Boliviana, Cochabamba",434,330,715,584
+97O154,"Islamic Azad University, Ahar",359,700,716,240
+13Z146,Georgian Court College,140,572,530,298
+14O917,"Arts, Sciences and Technology University",601,337,264,380
+67M879,EPF Ecole d'Ingénieurs,351,518,779,227
+12I540,William and Catherine Booth College,969,495,479,269
+61D384,Ecole Spéciale de Mécanique et d'Electricité,231,332,311,492
+53S401,Technische Universität Berlin,291,318,422,698
+67U251,University of North Carolina at Pembroke,1004,256,446,455
+23X648,Universitas Pesantren Darul Ulum Jombang,165,578,402,715
+38P510,Daffodil International University,1046,523,676,538
+39N596,College of Technology at Abha,204,250,538,420
+78M617,Georg-Simon-Ohm-Fachhochschule Nürnberg,263,236,517,287
+58Q285,Politeknik Negeri Padang,996,723,252,597
+90E844,United States Air Force Academy,713,683,352,379
+21P157,University of Venda,229,305,582,641
+20K875,Universitas Yarsi,327,699,446,606
+04H763,Wesley College Mississippi,225,577,444,468
+50X796,Université de Lomé,307,286,710,424
+96P752,"Federal University of Technology, Owerri",446,688,544,243
+19G153,Alhamd Islamic University,308,369,465,674
+45K131,Shirayuri Women's College,859,334,401,384
+13W478,Escuela Colombiana de Carreras Industriales,460,627,702,597
+44I217,Universitas Nasional Pasim,258,404,450,423
+59W923,Green Mountain College,470,798,489,300
+97Z720,Khabarovsk State University of Technology,291,406,270,653
+84R457,Universitas Darma Persada,785,406,473,772
+08W128,Universidad Católica de Córdoba,139,473,672,598
+73P163,Universidade Federal do Rio de Janeiro,846,241,704,442
+32F103,"Universidad Argentina ""John F. Kennedy""",427,791,744,683
+73C722,Southwest Forestry University,758,412,679,799
+31F208,Canterbury Christ Church University,867,583,560,722
+22B948,Mamoun Private University for Science and Technology,421,478,759,563
+91X888,Kochi Medical School,515,661,224,366
+96A085,Russian Academy of Theatre Arts,431,687,565,629
+16X791,University of Performing Arts in Bratislava,614,471,461,373
+70D420,Arthur D. Little Management Education Institute,963,499,475,726
+60O272,Nizhny Novgorod State Technical University,574,782,430,463
+58I783,Universitas Muhammadiyah Sumatra Utara,990,546,589,380
+23U815,Pennsylvania State University - Lehigh Valley,1027,228,754,671
+71T750,Thomas Aquinas College,14,271,795,727
+32G554,Rajiv Gandhi University,842,673,449,514
+46N367,Near East University,528,780,231,750
+62I544,Detroit College of Business - Warren,656,206,220,698
+09O012,Universität Duisburg-Essen,833,313,715,249
