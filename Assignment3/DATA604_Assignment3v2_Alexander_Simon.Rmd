@@ -1,0 +1,922 @@
+---
+title: "DATA604 Assignment 3"
+author: "Alexander Simon"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gdata)
+library(reshape2)
+library(kableExtra)
+```
+
+## 1. Introduction
+
+The overall goal of this assignment was to use [Mockaroo](https://www.mockaroo.com/), a mock data generator, to create mock (aka fake or synthetic) data that resembles a real dataset.
+
+## 2. Real data
+
+I selected a dataset of average [SAT exam scores](https://data.cityofnewyork.us/Education/SAT-College-Board-2010-School-Level-Results/zt9s-n5aj/about_data) from New York City (NYC) schools in 2010 that is publicly available on [NYC OpenData](https://opendata.cityofnewyork.us/), in part because it was less than half of the 1000-row limit on Mockaroo (ie, allowing the entire dataset to be doubled in size).
+
+I downloaded the CSV file, saved it to my GitHub repository, and then loaded it into a dataframe.
+
+```{r load-data-real}
+SAT_scores_real <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/NYC_schools_meanSAT_2010.csv', show_col_types = FALSE)
+```
+
+The raw data has 460 rows and 6 columns.
+
+```{r glimpse-data}
+glimpse(SAT_scores_real)
+```
+
+Some of the column names were difficult to work with, so I renamed them.
+
+```{r rename-columns}
+SAT_scores_real <- SAT_scores_real %>%
+  rename(school_ID = DBN, 
+         school_name = `School Name`,
+         n_test_takers = `Number of Test Takers`,
+         mean_reading_score = `Critical Reading Mean`,
+         mean_math_score = `Mathematics Mean`,
+         mean_writing_score = `Writing Mean`)
+```
+
+There was also some missing data. I removed these rows because they wouldn't be informative for subsequent statistical analyses. This left 386 rows.
+
+```{r check-na}
+map(SAT_scores_real, ~ sum(is.na(.)))
+```
+
+```{r drop-na}
+SAT_scores_real <- SAT_scores_real %>%
+  drop_na()
+
+nrow(SAT_scores_real)
+```
+
+The number of test takers at each school ranged from 7 to 1047.
+
+```{r range-students}
+summary(SAT_scores_real$n_test_takers)
+```
+
+<br>
+
+## 3. Mock data
+
+I used [Mockaroo](https://www.mockaroo.com/) to create mock SAT score datasets using the attributes of the real dataset above. To define the minimum and maximum score for each test section (reading, math, writing), I looked up the minimum and maximum [scores](https://www.collegetransitions.com/blog/average-sat-score-over-time/) for SAT exams that were administered in 2010.
+
+The Mockaroo input parameters are shown below. I defined a "Digit Sequence" for the school ID based on the real identifiers. The closest field type that I could find for `school_name` was "University".
+
+![](https://github.com/alexandersimon1/Data604/blob/main/Assignment3/mockaroo_input_parameters_initial.png?raw=true)
+
+I generated 2 mock datasets with 386 rows and 772 rows ($2\times$ original). I saved the CSV files to my GitHub repository and loaded them into dataframes.
+
+```{r load-data-mock1}
+# mock1 is same size as the original dataset
+SAT_scores_mock1 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA1.csv', show_col_types = FALSE)
+
+# mock2 is twice as large as the original dataset
+SAT_scores_mock2 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA2.csv', show_col_types = FALSE)
+```
+
+## 4. Analysis
+
+I wasn't sure what the assignment instructions meant by profiling the data with a pivot table, but I compared the real vs mock data using descriptive statistics.
+
+### 4.1. Number of test takers
+
+The boxplots below show that the distribution of the number test takers in both mock datasets was similar but was substantially different from the real dataset.
+
+```{r reshape-data-test-takers}
+# gdata::cbindX() is used rather than base cbind() because mock1 and mock2 have different number of rows
+test_takers_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$n_test_takers),
+                                data.frame(SAT_scores_mock1$n_test_takers),
+                                data.frame(SAT_scores_mock2$n_test_takers))) %>%
+  set_names("real", "mock1", "mock2") %>%
+  gather(., key = "dataset", value = "n_test_takers") %>%
+  drop_na()
+```
+
+```{r boxplot-test-takers}
+ggplot(test_takers_all, aes(x = n_test_takers, fill = dataset)) + 
+  geom_boxplot()
+```
+
+This difference can also be seen by comparing summary statistics. All 3 datasets have the same range of values (as expected); however, the median and mean number of test takers in the mock datasets are much greater than those in the real dataset.
+
+```{r summary-statistics-test-takers}
+test_takers_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(n_test_takers),
+    max = max(n_test_takers),
+    median = median(n_test_takers),
+    IQR = round(IQR(n_test_takers), 2),
+    mean = round(mean(n_test_takers), 2),
+    SD = round(sd(n_test_takers), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material()
+```
+
+<br>
+
+### 4.2. Reading score
+
+The distribution of mean reading scores in both mock datasets was nearly identical but was much wider than the real dataset.
+
+```{r reshape-data-reading-scores}
+reading_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_reading_score),
+                                data.frame(SAT_scores_mock1$mean_reading_score),
+                                data.frame(SAT_scores_mock2$mean_reading_score))) %>%
+  set_names("real", "mock1", "mock2") %>%
+  gather(., key = "dataset", value = "mean_reading_score") %>%
+  drop_na()
+```
+
+```{r boxplot-reading-scores}
+ggplot(reading_score_all, aes(x = mean_reading_score, fill = dataset)) + 
+  geom_boxplot()
+```
+
+The range of reading scores in the mock datasets almost perfectly matches the input parameters (200 to 800), whereas the range of the reading scores in the real dataset is more narrow (291 to 674). This is not surprising given that the real dataset has mean test scores for each school, so even though the theoretical minimum and maximum test scores are 200 and 800, the mean score for any school is unlikely to be that low/high because not every test taker in a school would score the minimum/maximum possible.
+
+The median and mean reading score were higher in the mock datasets than in the real dataset.
+
+```{r summary-statistics-reading-scores}
+reading_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_reading_score),
+    max = max(mean_reading_score),
+    median = median(mean_reading_score),
+    IQR = round(IQR(mean_reading_score), 2),
+    mean = round(mean(mean_reading_score), 2),
+    SD = round(sd(mean_reading_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material()
+```
+
+<br>
+
+### 4.3. Math score
+
+Similar to the distribution of mean reading scores, the distribution of mean math scores was similar in both mock datasets but differed from the real dataset.
+
+```{r reshape-data-math-scores}
+math_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_math_score),
+                                          data.frame(SAT_scores_mock1$mean_math_score),
+                                          data.frame(SAT_scores_mock2$mean_math_score))) %>%
+  set_names("real", "mock1", "mock2") %>%
+  gather(., key = "dataset", value = "mean_math_score") %>%
+  drop_na()
+```
+
+```{r boxplot-math-scores}
+ggplot(math_score_all, aes(x = mean_math_score, fill = dataset)) + 
+  geom_boxplot()
+```
+
+The similarity and differences among summary statistics in the mock vs real datasets were similar to those in the reading score analysis (section 3.2).
+
+```{r summary-statistics-math-scores}
+math_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_math_score),
+    max = max(mean_math_score),
+    median = median(mean_math_score),
+    IQR = round(IQR(mean_math_score), 2),
+    mean = round(mean(mean_math_score), 2),
+    SD = round(sd(mean_math_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material()
+```
+
+<br>
+
+### 4.4. Writing score
+
+Similar to the distribution of mean reading and math scores, the distribution of mean writing scores was similar in both mock datasets but differed from the real dataset.
+
+```{r reshape-data-writing-scores}
+writing_score_all <- as_tibble(
+                        gdata::cbindX(data.frame(SAT_scores_real$mean_writing_score),
+                                      data.frame(SAT_scores_mock1$mean_writing_score),
+                                      data.frame(SAT_scores_mock2$mean_writing_score))) %>%
+  set_names("real", "mock1", "mock2") %>%
+  gather(., key = "dataset", value = "mean_writing_score") %>%
+  drop_na()
+```
+
+```{r boxplot-writing-scores}
+ggplot(writing_score_all, aes(x = mean_writing_score, fill = dataset)) + 
+  geom_boxplot()
+```
+
+The similarity and differences among summary statistics in the mock vs real datasets were similar to those in the reading and math score analyses (sections 3.2 and 3.3).
+
+```{r summary-statistics-writing-scores}
+writing_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_writing_score),
+    max = max(mean_writing_score),
+    median = median(mean_writing_score),
+    IQR = round(IQR(mean_writing_score), 2),
+    mean = round(mean(mean_writing_score), 2),
+    SD = round(sd(mean_writing_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material()
+```
+
+<br>
+
+### 4.5. Summary of findings from initial mock data
+
+The mock datasets only resembled the real dataset in terms of the range of number of test takers, which was specified as input parameters. With respect to other summary statistics (eg, min, max, median score), neither mock dataset closely resembled the real dataset. Increasing the size of the mock dataset didn't alter the differences from the real dataset.
+
+## 5. Improvements
+
+### 5.1. Fit mock data to distribution of variables in real dataset
+
+My first idea to improve the mock data was to analyze the distribution of values in the real dataset and then customize Mockaroo to generate mock data that fit those distributions.
+
+#### 5.1.1. Real distributions
+
+The histograms below suggest that the test section scores and number of test takers in the real dataset are normally distributed and skewed to the right.
+
+```{r reshape-real-data}
+scores_real_all <- gather(SAT_scores_real, key = "variable", value = "value", 
+                          c("n_test_takers", "mean_reading_score", "mean_math_score",
+                            "mean_writing_score"))
+```
+
+```{r histograms-real-data}
+ggplot(scores_real_all, aes(x = value, fill = variable)) +
+  geom_histogram(binwidth = 20) +
+  facet_wrap(~ factor(variable, c("mean_reading_score", "mean_math_score",
+                                 "mean_writing_score", "n_test_takers")), scales = "free") +
+  theme(legend.position = "none")  
+```
+
+I confirmed this with quantile (Q-Q) plots, which were consistent with right-skewed normal distributions.
+
+```{r}
+ggplot(scores_real_all, aes(sample = value)) +
+  stat_qq() +
+  stat_qq_line(color = "steelblue") +
+  xlab("Theoretical") + ylab("Sample") +
+  facet_wrap(vars(variable), scales='free_y')
+```
+
+The mean and standard deviation (SD) of each variable is shown below.
+
+```{r summary-statistics-real-data}
+scores_real_all %>%
+  group_by(variable) %>%
+  summarise(
+    mean = round(mean(value), 1),
+    SD = round(sd(value), 1),    
+  ) %>%
+  kbl() %>%
+  kable_material()
+```
+
+Because the SD for `n_test_takers` is greater than its mean, random numbers sampled from a normal distribution with those parameters may be negative and not meaningful. There didn't seem to be any good [way](https://stackoverflow.com/questions/59305387/how-can-i-force-a-rnorm-simulation-to-give-me-positive-numbers-only) to constrain a normal distribution to positive values, so I resorted to using the Custom List field type in Mockaroo with random selection option and pasted a random sample of 10% (39 rows) or 20% (78 rows) of the real data into the field. I chose these percentages based on the number of samples typically needed to demonstrate normality (ie, "Law of Large Numbers"). The random selection should ensure that the mock dataset is not an exact duplicate of the real data.
+
+10% sample
+
+```{r test-takers-sample-10percent}
+set.seed(128)
+# randomly sample row numbers
+row_numbers10 <- sample(nrow(SAT_scores_real), 39)
+# get the corresponding values
+# n_test_takers is column 3
+n_test_takers10 <- SAT_scores_real[row_numbers10, 3]
+# create input string for Mockaroo
+paste(unlist(n_test_takers10), collapse = ", ")
+```
+
+20% sample
+
+```{r test-takers-sample-20percent}
+set.seed(128)
+row_numbers20 <- sample(nrow(SAT_scores_real), 78)
+n_test_takers20 <- SAT_scores_real[row_numbers20, 3]
+paste(unlist(n_test_takers20), collapse = ", ")
+```
+
+<br>
+
+#### 5.1.2. Mockaroo data
+
+Using the insights above, I modified the Mockaroo input parameters as shown below.
+
+![](https://github.com/alexandersimon1/Data604/blob/main/Assignment3/mockaroo_input_parameters_improved.png?raw=true)
+
+As before, I generated 2 mock datasets with 386 rows and 772 rows. I saved the CSV files to my GitHub repository and loaded them into dataframes.
+
+```{r load-data-mock2}
+SAT_scores_mock3 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA3.csv', show_col_types = FALSE)
+
+SAT_scores_mock4 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA4.csv', show_col_types = FALSE)
+```
+
+#### 5.1.3. Analysis
+
+**5.1.3.1. Number of test takers**
+
+The distribution of the number of test takers in the new mock datasets ("`mock3`" and "`mock4`") more closely resembled the distribution in the real dataset than the initial mock datasets ("`mock1`" and "`mock2`"). The larger modified mock dataset (`mock4`) included more outliers than the smaller modified mock dataset (`mock3`); however, neither had as many as the real dataset.
+
+```{r reshape-data-test-takers2}
+test_takers_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$n_test_takers),
+                                data.frame(SAT_scores_mock1$n_test_takers),
+                                data.frame(SAT_scores_mock2$n_test_takers),
+                                data.frame(SAT_scores_mock3$n_test_takers),
+                                data.frame(SAT_scores_mock4$n_test_takers))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4") %>%
+  gather(., key = "dataset", value = "n_test_takers") %>%
+  drop_na()
+```
+
+```{r boxplot-test-takers2}
+test_takers_all$dataset <- factor(test_takers_all$dataset, 
+                                    levels = c("mock3", "mock4", "real", "mock1", "mock2"))
+
+ggplot(test_takers_all, aes(x = n_test_takers, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4"))
+```
+
+The similarity of the modified mock datasets to the real dataset can also be seen in the summary statistics below.
+
+```{r summary-statistics-test-takers2}
+test_takers_all$dataset <- factor(test_takers_all$dataset, 
+                                    levels = c("real", "mock1", "mock2", "mock3", "mock4"))
+
+test_takers_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(n_test_takers),
+    max = max(n_test_takers),
+    median = median(n_test_takers),
+    IQR = round(IQR(n_test_takers), 2),
+    mean = round(mean(n_test_takers), 2),
+    SD = round(sd(n_test_takers), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>% 
+  row_spec(5, background = "#00BF7D") 
+```
+
+<br>
+
+**5.1.3.2. Reading score**
+
+The distribution of mean reading scores in the modified mock datasets also more closely resembles the distribution in the real dataset than the initial mock datasets.
+
+```{r reshape-data-reading-scores2}
+reading_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_reading_score),
+                                data.frame(SAT_scores_mock1$mean_reading_score),
+                                data.frame(SAT_scores_mock2$mean_reading_score),
+                                data.frame(SAT_scores_mock3$mean_reading_score),
+                                data.frame(SAT_scores_mock4$mean_reading_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4") %>%
+  gather(., key = "dataset", value = "mean_reading_score") %>%
+  drop_na()
+```
+
+```{r boxplot-reading-scores2}
+reading_score_all$dataset <- factor(reading_score_all$dataset, 
+                                    levels = c("mock3", "mock4", "real", "mock1", "mock2"))
+
+ggplot(reading_score_all, aes(x = mean_reading_score, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4"))
+```
+
+As expected, the mean and standard deviation as well as median and IQR of the mock datasets are nearly equal to those for the real dataset. The range of the mock data is more similar as well, although there are not as many high outliers as in the real dataset.
+
+```{r summary-statistics-reading-scores2}
+reading_score_all$dataset <- factor(reading_score_all$dataset, 
+                                    levels = c("real", "mock1", "mock2", "mock3", "mock4"))
+
+reading_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_reading_score),
+    max = max(mean_reading_score),
+    median = median(mean_reading_score),
+    IQR = round(IQR(mean_reading_score), 2),
+    mean = round(mean(mean_reading_score), 2),
+    SD = round(sd(mean_reading_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>% 
+  row_spec(5, background = "#00BF7D") 
+```
+
+<br>
+
+**5.1.3.3. Math score**
+
+Similar to the reading score, the distribution of mean math scores in the new mock datasets more closely resembles the distribution in the real dataset than the initial mock datasets.
+
+```{r reshape-data-math-scores2}
+math_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_math_score),
+                                data.frame(SAT_scores_mock1$mean_math_score),
+                                data.frame(SAT_scores_mock2$mean_math_score),
+                                data.frame(SAT_scores_mock3$mean_math_score),
+                                data.frame(SAT_scores_mock4$mean_math_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4") %>%
+  gather(., key = "dataset", value = "mean_math_score") %>%
+  drop_na()
+```
+
+```{r boxplot-math-scores2}
+math_score_all$dataset <- factor(math_score_all$dataset, 
+                                    levels = c("mock3", "mock4", "real", "mock1", "mock2"))
+
+ggplot(math_score_all, aes(x = mean_math_score, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4"))
+```
+
+The similarity can also be seen in the summary statistics below.
+
+```{r summary-statistics-math-scores2}
+math_score_all$dataset <- factor(math_score_all$dataset, 
+                                    levels = c("real", "mock1", "mock2", "mock3", "mock4"))
+
+math_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_math_score),
+    max = max(mean_math_score),
+    median = median(mean_math_score),
+    IQR = round(IQR(mean_math_score), 2),
+    mean = round(mean(mean_math_score), 2),
+    SD = round(sd(mean_math_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>% 
+  row_spec(5, background = "#00BF7D")
+```
+
+<br>
+
+**5.1.3.4. Writing score**
+
+Similar to the reading and math scores, the distribution of mean writing scores in the new mock datasets more closely resembles the distribution in the real dataset than the initial mock datasets.
+
+```{r reshape-data-writing-scores2}
+writing_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_writing_score),
+                                data.frame(SAT_scores_mock1$mean_writing_score),
+                                data.frame(SAT_scores_mock2$mean_writing_score),
+                                data.frame(SAT_scores_mock3$mean_writing_score),
+                                data.frame(SAT_scores_mock4$mean_writing_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4") %>%
+  gather(., key = "dataset", value = "mean_writing_score") %>%
+  drop_na()
+```
+
+```{r boxplot-writing-scores2}
+writing_score_all$dataset <- factor(writing_score_all$dataset, 
+                                    levels = c("mock3", "mock4", "real", "mock1", "mock2"))
+
+ggplot(writing_score_all, aes(x = mean_writing_score, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4"))
+```
+
+The similarity can also be seen in the summary statistics below.
+
+```{r summary-statistics-writing-scores2}
+writing_score_all$dataset <- factor(writing_score_all$dataset, 
+                                    levels = c("real", "mock1", "mock2", "mock3", "mock4"))
+
+writing_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_writing_score),
+    max = max(mean_writing_score),
+    median = median(mean_writing_score),
+    IQR = round(IQR(mean_writing_score), 2),
+    mean = round(mean(mean_writing_score), 2),
+    SD = round(sd(mean_writing_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>% 
+  row_spec(5, background = "#00BF7D")
+```
+
+<br>
+
+### 5.2. Leveraging relationships between variables in the real data
+
+My second idea to improve the mock data was to determine whether any of the variables in the real data were correlated and, if so, to leverage the relationship to increase the similarity between the real and mock data.
+
+#### 5.2.1. Mean reading score vs mean writing score
+
+Mean reading and writing scores were strongly linearly correlated ($R^2 = 0.9573$). The regression model is $mean\_reading\_score = 21.52677 + 0.96236 \times mean\_writing\_score$
+
+```{r lm-reading-writing-real}
+lm_reading_writing_real <- SAT_scores_real %>%
+  select(mean_reading_score, mean_writing_score) %>%
+  lm(mean_reading_score ~ mean_writing_score, data = .)
+summary(lm_reading_writing_real)
+```
+
+```{r scatterplot-reading-writing-real}
+coeff <- round(cor(SAT_scores_real$mean_writing_score, SAT_scores_real$mean_reading_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_real, aes(x = mean_writing_score, y = mean_reading_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 550, y = 650,
+            label = paste0('r = ', coeff),
+            color = 'blue')
+```
+
+#### 5.2.2. Mean reading/writing score vs mean math score
+
+Given the strong correlation between mean reading and writing scores, I averaged the two scores and found a moderate correlation with the mean math score $R^2 = 0.816$. The regression model is $mean\_math\_score = -0.21410 + 1.03038 \times average\_reading\_writing\_score$
+
+```{r lm-avg-reading-writing-vs-math-real}
+SAT_scores_real2 <- SAT_scores_real %>%
+  mutate(
+    avg_reading_writing_score = (mean_reading_score + mean_writing_score) / 2
+    )
+
+lm_reading_writing_math_real <- SAT_scores_real2 %>%
+  select(avg_reading_writing_score, mean_math_score) %>%
+  lm(mean_math_score ~ avg_reading_writing_score, data = .)
+
+summary(lm_reading_writing_math_real)
+```
+
+```{r scatterplot-avg-reading-writing-math-real}
+coeff <- round(cor(SAT_scores_real2$mean_math_score,
+                   SAT_scores_real2$avg_reading_writing_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_real2, aes(x = avg_reading_writing_score, y = mean_math_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +
+  xlab("Average reading/writing score") +
+  geom_text(x = 550, y = 700,
+            label = paste0('r = ', coeff),
+            color = 'blue')
+```
+
+#### 5.2.3. Mockaroo data
+
+Using the regression formulas above, I modified the Mockaroo input parameters as shown below. I did not change the method for generating mock data for the `n_test_takers` or `mean_writing_score` fields.
+
+![](https://github.com/alexandersimon1/Data604/blob/main/Assignment3/mockaroo_input_parameters_improved2.png?raw=true)
+
+As before, I generated 2 mock datasets with 386 rows and 772 rows. I saved the CSV files to my GitHub repository and loaded them into dataframes.
+
+```{r load-data-mock3}
+SAT_scores_mock5 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA5.csv', show_col_types = FALSE)
+
+SAT_scores_mock6 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/Data604/main/Assignment3/MOCK_DATA6.csv', show_col_types = FALSE)
+```
+
+#### 5.2.4. Analysis
+
+**5.2.4.1. Reading score**
+
+The distribution of mean reading scores in the modified mock datasets ("`mock5`" and "`mock6`") was very similar to the distribution in the `mock3` and `mock4` datasets. All 4 modified datasets more closely resembled the distribution in the real dataset than the initial mock datasets ("`mock1`" and "`mock2`").
+
+```{r reshape-data-reading-scores3}
+reading_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_reading_score),
+                                data.frame(SAT_scores_mock1$mean_reading_score),
+                                data.frame(SAT_scores_mock2$mean_reading_score),
+                                data.frame(SAT_scores_mock3$mean_reading_score),
+                                data.frame(SAT_scores_mock4$mean_reading_score),
+                                data.frame(SAT_scores_mock5$mean_reading_score),
+                                data.frame(SAT_scores_mock6$mean_reading_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6") %>%
+  gather(., key = "dataset", value = "mean_reading_score") %>%
+  drop_na()
+```
+
+```{r boxplot-reading-scores3}
+reading_score_all$dataset <- factor(reading_score_all$dataset, 
+                                    levels = c("mock3", "mock4", 
+                                               "mock5", "mock6", "real", "mock1", "mock2"))
+
+ggplot(reading_score_all, aes(x = mean_reading_score, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D",
+                               "#CCCC00", "#FF9966"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6"))
+```
+
+The summary statistics for the `mock5` and `mock6` datasets were similar to those for the `mock3` and `mock4` datasets.
+
+```{r summary-statistics-reading-scores3}
+reading_score_all$dataset <- factor(reading_score_all$dataset, 
+                                    levels = c("real", "mock1", "mock2", "mock3", "mock4",
+                                               "mock5", "mock6"))
+
+reading_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_reading_score),
+    max = max(mean_reading_score),
+    median = median(mean_reading_score),
+    IQR = round(IQR(mean_reading_score), 2),
+    mean = round(mean(mean_reading_score), 2),
+    SD = round(sd(mean_reading_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>% 
+  row_spec(5, background = "#00BF7D") %>%
+  row_spec(6, background = "#CCCC00") %>%
+  row_spec(7, background = "#FF9966")  
+```
+
+As expected, the mean reading and writing scores were perfectly correlated in both of the new mock datasets (only `mock5` is shown).
+
+```{r scatterplot-reading-writing-mock5}
+coeff <- round(cor(SAT_scores_mock5$mean_writing_score, SAT_scores_mock5$mean_reading_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock5, aes(x = mean_writing_score, y = mean_reading_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 550, y = 650,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock5")
+```
+
+In contrast, the mean reading and writing scores in the previous iteration of mock data were not correlated (only `mock3` is shown).
+
+```{r scatterplot-reading-writing-mock3, warning=FALSE}
+coeff <- round(cor(SAT_scores_mock3$mean_writing_score, SAT_scores_mock3$mean_reading_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock3, aes(x = mean_writing_score, y = mean_reading_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 650, y = 425,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock3")
+```
+
+<br>
+
+**5.2.4.2. Math score**
+
+The distribution of mean reading scores in the modified mock datasets ("`mock5`" and "`mock6`") was very similar to the distribution in the `mock3` and `mock4` datasets. All 4 modified datasets more closely resembled the distribution in the real dataset than the initial mock datasets ("`mock1`" and "`mock2`").
+
+```{r reshape-data-math-scores3}
+math_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_math_score),
+                            data.frame(SAT_scores_mock1$mean_math_score),
+                            data.frame(SAT_scores_mock2$mean_math_score),
+                            data.frame(SAT_scores_mock3$mean_math_score),
+                            data.frame(SAT_scores_mock4$mean_math_score),
+                            data.frame(SAT_scores_mock5$mean_math_score),
+                            data.frame(SAT_scores_mock6$mean_math_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6") %>%
+  gather(., key = "dataset", value = "mean_math_score") %>%
+  drop_na()
+```
+
+```{r boxplot-math-scores3}
+math_score_all$dataset <- factor(math_score_all$dataset, 
+                                 levels = c("mock3", "mock4", 
+                                            "mock5", "mock6", "real", "mock1", "mock2"))
+
+ggplot(math_score_all, aes(x = mean_math_score, fill = dataset)) + 
+  geom_boxplot() +
+  scale_fill_manual(values = c("#F8766D", "lightgray", "darkgray", "#00BFC4", "#00BF7D",
+                               "#CCCC00", "#FF9966"), 
+                    breaks = c("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6"))
+```
+
+The range of math scores in the `mock5` and `mock6` datasets more closely resembled the real dataset than the `mock3` and `mock4` datasets. The mean math score in the `mock5` dataset nearly equaled the mean in the real dataset.
+
+```{r summary-statistics-math-scores3}
+math_score_all$dataset <- factor(math_score_all$dataset, 
+                                 levels = c("real", "mock1", "mock2", "mock3", "mock4",
+                                            "mock5", "mock6"))
+
+math_score_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    min = min(mean_math_score),
+    max = max(mean_math_score),
+    median = median(mean_math_score),
+    IQR = round(IQR(mean_math_score), 2),
+    mean = round(mean(mean_math_score), 2),
+    SD = round(sd(mean_math_score), 2),    
+  ) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(6, background = "#CCCC00") %>%
+  row_spec(7, background = "#FF9966")
+```
+
+Both the mean reading and writing scores were perfectly correlated with the mean math scores in the new mock datasets (only `mock5` is shown).
+
+```{r scatterplot-reading-math-mock5}
+coeff <- round(cor(SAT_scores_mock5$mean_reading_score, SAT_scores_mock5$mean_math_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock5, aes(x = mean_reading_score, y = mean_math_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 550, y = 650,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock5")
+```
+
+```{r scatterplot-writing-math-mock5}
+coeff <- round(cor(SAT_scores_mock5$mean_writing_score, SAT_scores_mock5$mean_math_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock5, aes(x = mean_writing_score, y = mean_math_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 550, y = 650,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock5")
+```
+
+In contrast, the mean reading/writing and math scores in the previous iteration of mock data were not correlated (only `mock3` is shown).
+
+```{r scatterplot-reading-math-mock3}
+coeff <- round(cor(SAT_scores_mock3$mean_reading_score, SAT_scores_mock3$mean_math_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock3, aes(x = mean_reading_score, y = mean_math_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 650, y = 425,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock3")
+```
+
+```{r scatterplot-writing-math-mock3, warning=FALSE}
+coeff <- round(cor(SAT_scores_mock3$mean_writing_score, SAT_scores_mock3$mean_math_score, 
+                   method = c("pearson")), 2)
+
+ggplot(SAT_scores_mock3, aes(x = mean_writing_score, y = mean_math_score)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  xlim(200, 800) + ylim(200, 800) +  
+  geom_text(x = 650, y = 425,
+            label = paste0('r = ', coeff),
+            color = 'blue') +
+  ggtitle("Mock3")
+```
+
+<br>
+
+## 6. Comparison of accuracy
+
+In one of the readings for this week,[^1] a formula is given for determining whether a simulated dataset has sufficient values to achieve accuracy $\epsilon$.
+
+[^1]: Milić DC and Kvesić L. [Role of random numbers in simulations of economic processes](https://ideas.repec.org/a/osi/journl/v4y2008p562-570.html). *Interdisciplinary Management Research* 2008;4:562-570. Formula is on page 569.
+
+$$z_a\sqrt{\frac{1}{n(n-1)}\sum_{k=1}^{n}(x_k - \mu)^2} \le \epsilon$$\
+where $\epsilon$ is the maximum allowed error, $z_a$ is the *Z* score at significance level $\alpha$, *n* is the number of simulated values, and $x_k$ are the simulated data.
+
+Recognizing that part of the term inside the square root is the formula for sample variance, which is the square of standard deviation, and for $\alpha = 0.05$, $z_a \approx 1.96$, the above simplifies to
+
+$$1.96 \times \frac{SD}{\sqrt{n}} \le \epsilon$$
+
+The left-hand side is the formula for margin of error in random sampling. Here, I use it as a metric of accuracy to compare the real vs mock datasets.
+
+The table below suggests that the `mock3` and `mock5` datasets have the best overall accuracy (ie, across all variables). Increasing the dataset size improved the overall accuracy for the initial "naive" approach of generating mock data (`mock2` vs `mock1`) but reduced the overall accuracy when data distribution and relationships between variables were taken into account (`mock4` vs `mock3` and `mock6` vs `mock5`, respectively).
+
+```{r reshape-data-test-takers3}
+test_takers_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$n_test_takers),
+                                data.frame(SAT_scores_mock1$n_test_takers),
+                                data.frame(SAT_scores_mock2$n_test_takers),
+                                data.frame(SAT_scores_mock3$n_test_takers),
+                                data.frame(SAT_scores_mock4$n_test_takers),
+                                data.frame(SAT_scores_mock5$n_test_takers),
+                                data.frame(SAT_scores_mock6$n_test_takers))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6") %>%
+  gather(., key = "dataset", value = "n_test_takers") %>%
+  drop_na()
+```
+
+```{r reshape-data-writing-scores3}
+writing_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_writing_score),
+                                data.frame(SAT_scores_mock1$mean_writing_score),
+                                data.frame(SAT_scores_mock2$mean_writing_score),
+                                data.frame(SAT_scores_mock3$mean_writing_score),
+                                data.frame(SAT_scores_mock4$mean_writing_score),
+                                data.frame(SAT_scores_mock5$mean_writing_score),
+                                data.frame(SAT_scores_mock6$mean_writing_score))) %>%
+  set_names("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6") %>%
+  gather(., key = "dataset", value = "mean_writing_score") %>%
+  drop_na()
+```
+
+```{r compare-epsilon}
+calc_epsilon <- function(std_dev, n) {
+  return(round((1.96 * std_dev) / sqrt(n), 2))
+}
+
+data_all <- as_tibble(cbind(dataset = as.character(test_takers_all$dataset), 
+                            n_test_takers = test_takers_all$n_test_takers,
+                            mean_reading_score = reading_score_all$mean_reading_score,
+                            mean_math_score = math_score_all$mean_math_score,
+                            mean_writing_score = writing_score_all$mean_writing_score))
+
+data_all$dataset <- factor(data_all$dataset, 
+                           levels = c("real", "mock1", "mock2", "mock3", "mock4",
+                                      "mock5", "mock6"))
+
+data_all %>%
+  group_by(dataset) %>%
+  summarise(
+    n = n(),
+    test_takers_SD = round(sd(n_test_takers), 2),
+    test_takers_epsilon = calc_epsilon(test_takers_SD, n),
+    reading_SD = round(sd(mean_reading_score), 2),
+    reading_epsilon = calc_epsilon(reading_SD, n),
+    math_SD = round(sd(mean_math_score), 2),
+    math_epsilon = calc_epsilon(math_SD, n),
+    writing_SD = round(sd(mean_writing_score), 2),
+    writing_epsilon = calc_epsilon(writing_SD, n),    
+  ) %>%
+  select(dataset, n, test_takers_epsilon, reading_epsilon, math_epsilon, writing_epsilon) %>%
+  kbl() %>%
+  kable_material() %>%
+  row_spec(1, background = "#F8766D") %>% 
+  row_spec(4, background = "#00BFC4") %>%
+  row_spec(6, background = "#CCCC00")  
+```
+
+The addition of the second set of improvements (relationships between variables) did not appear to affect the overall accuracy significantly. Because these improvements enhanced the resemblance of the mock data to the real data, I considered `mock5` to be superior to `mock3`.
+
+<br>
+
+## 7. Conclusions
+
+These analyses show that mimicking the distribution of values for each variable in the real data as well as relationships between variables in the real data improve the accuracy of mock data compared with real data. Doubling the amount of mock data generated did not seem to be very helpful. These conclusions are limited to this analysis of SAT exam score data, but I would expect similar principles to be true for other datasets.
+
+It should be noted that these methods do not replicate all characteristics of the real data, such as outliers, which is a known challenge of generating synthetic data.[^2] To further increase the fidelity to real data in datasets with outliers, additional data may need to be "spiked in" to the Mockaroo-generated data.
+
+[^2]: Dilmegani C. (2024, January 18). *Synthetic data vs real data: Benefits, challenges in 2024*. AI Multiple Research. <https://research.aimultiple.com/synthetic-data-vs-real-data/>
+
+Another consideration for generating simulated data is the time needed to create it. Although the mock SAT scores generated in this analysis are probably reliable substitutes for the real data, getting the mock data to resemble the real data required detailed exploratory data analysis and alignment with many characteristics of the data. In some cases, such as data that can be collected readily (ie, via an established data reporting system), it may be more cost effective to collect real data.
