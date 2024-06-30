@@ -608,7 +608,9 @@ ggplot(SAT_scores_real2, aes(x = avg_reading_writing_score, y = mean_math_score)
 
 #### 5.2.3. Mockaroo data
 
-Using the regression formulas above, I modified the Mockaroo input parameters as shown below. I did not change the method for generating mock data for the `n_test_takers` or `mean_writing_score` fields.
+Using the regression formulas above, I modified the Mockaroo input parameters as shown below. To introduce variation, I also created 2 offset terms using a normal distribution with mean 0 and the residual standard error from the regression models.
+
+I did not change the method for generating mock data for the `n_test_takers` or `mean_writing_score` fields.
 
 ![](https://github.com/alexandersimon1/Data604/blob/main/Assignment3/mockaroo_input_parameters_improved2.png?raw=true)
 
@@ -624,7 +626,7 @@ SAT_scores_mock6 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/
 
 **5.2.4.1. Reading score**
 
-The distribution of mean reading scores in the modified mock datasets ("`mock5`" and "`mock6`") was very similar to the distribution in the `mock3` and `mock4` datasets. All 4 modified datasets more closely resembled the distribution in the real dataset than the initial mock datasets ("`mock1`" and "`mock2`").
+The distribution of mean reading scores in the new modified mock datasets ("`mock5`" and "`mock6`") was very similar to the distribution in the previous modified datasets ("`mock3"` and "`mock4`"). All 4 modified datasets more closely resembled the distribution in the real dataset than the initial mock datasets ("`mock1`" and "`mock2`").
 
 ```{r reshape-data-reading-scores3}
 reading_score_all <- as_tibble(gdata::cbindX(data.frame(SAT_scores_real$mean_reading_score),
@@ -672,13 +674,11 @@ reading_score_all %>%
   kbl() %>%
   kable_material() %>%
   row_spec(1, background = "#F8766D") %>% 
-  row_spec(4, background = "#00BFC4") %>% 
-  row_spec(5, background = "#00BF7D") %>%
   row_spec(6, background = "#CCCC00") %>%
   row_spec(7, background = "#FF9966")  
 ```
 
-As expected, the mean reading and writing scores were perfectly correlated in both of the new mock datasets (only `mock5` is shown).
+As expected, the mean reading and writing scores were strongly correlated in the new mock datasets (only `mock5` is shown).
 
 ```{r scatterplot-reading-writing-mock5}
 coeff <- round(cor(SAT_scores_mock5$mean_writing_score, SAT_scores_mock5$mean_reading_score, 
@@ -741,7 +741,7 @@ ggplot(math_score_all, aes(x = mean_math_score, fill = dataset)) +
                     breaks = c("real", "mock1", "mock2", "mock3", "mock4", "mock5", "mock6"))
 ```
 
-The range of math scores in the `mock5` and `mock6` datasets more closely resembled the real dataset than the `mock3` and `mock4` datasets. The mean math score in the `mock5` dataset nearly equaled the mean in the real dataset.
+The summary statistics for the `mock5` and `mock6` datasets were similar to those for the `mock3` and `mock4` datasets. However, the range of math scores in the `mock5` dataset more closely resembled the real dataset than the `mock6` dataset. In addition, the mean math score in the `mock5` dataset was nearly identical to the mean in the real dataset.
 
 ```{r summary-statistics-math-scores3}
 math_score_all$dataset <- factor(math_score_all$dataset, 
@@ -762,11 +762,10 @@ math_score_all %>%
   kbl() %>%
   kable_material() %>%
   row_spec(1, background = "#F8766D") %>% 
-  row_spec(6, background = "#CCCC00") %>%
-  row_spec(7, background = "#FF9966")
+  row_spec(6, background = "#CCCC00")
 ```
 
-Both the mean reading and writing scores were perfectly correlated with the mean math scores in the new mock datasets (only `mock5` is shown).
+Both the mean reading/writing scores were strongly correlated with the mean math scores in the new mock datasets (only `mock5` is shown).
 
 ```{r scatterplot-reading-math-mock5}
 coeff <- round(cor(SAT_scores_mock5$mean_reading_score, SAT_scores_mock5$mean_math_score, 
@@ -907,16 +906,14 @@ data_all %>%
   row_spec(6, background = "#CCCC00")  
 ```
 
-The addition of the second set of improvements (relationships between variables) did not appear to affect the overall accuracy significantly. Because these improvements enhanced the resemblance of the mock data to the real data, I considered `mock5` to be superior to `mock3`.
+The addition of the second set of improvements (relationships between variables) did not appear to affect the overall accuracy significantly. Because these improvements enhanced the resemblance of the mock data to the real data, I considered the `mock5` dataset to be superior to the `mock3` dataset.
 
 <br>
 
 ## 7. Conclusions
 
-These analyses show that mimicking the distribution of values for each variable in the real data as well as relationships between variables in the real data improve the accuracy of mock data compared with real data. Doubling the amount of mock data generated did not seem to be very helpful. These conclusions are limited to this analysis of SAT exam score data, but I would expect similar principles to be true for other datasets.
+These analyses show that mimicking the distribution of values for each variable in the real data as well as relationships between variables in the real data improve the accuracy of mock data compared with real data. Doubling the amount of mock data generated did not seem to be very helpful. The mock SAT exam score data generated by using these methods are probably reliable subtitutes for real SAT scores. These conclusions are limited to this analysis of SAT exam scores, but I would expect similar principles to be true for other datasets.
 
-It should be noted that these methods do not replicate all characteristics of the real data, such as outliers, which is a known challenge of generating synthetic data.[^2] To further increase the fidelity to real data in datasets with outliers, additional data may need to be "spiked in" to the Mockaroo-generated data.
+It should be noted that these methods of simulating data do not replicate all characteristics of real data, such as outliers, which is a known challenge of generating synthetic data.[^2] To further increase the fidelity to real data in datasets with outliers, additional data may need to be "spiked in" to the Mockaroo-generated data.
 
 [^2]: Dilmegani C. (2024, January 18). *Synthetic data vs real data: Benefits, challenges in 2024*. AI Multiple Research. <https://research.aimultiple.com/synthetic-data-vs-real-data/>
-
-Another consideration for generating simulated data is the time needed to create it. Although the mock SAT scores generated in this analysis are probably reliable substitutes for the real data, getting the mock data to resemble the real data required detailed exploratory data analysis and alignment with many characteristics of the data. In some cases, such as data that can be collected readily (ie, via an established data reporting system), it may be more cost effective to collect real data.
