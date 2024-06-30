@@ -1,0 +1,773 @@
+school_ID,school_name,n_test_takers,mean_writing_score,mean_reading_score,mean_math_score
+21T962,Trinity College of Music,52,417,423,433
+58K646,Western States Chiropractic College,15,332,341,346
+53W597,Pennsylvania Academy of the Fine Arts,29,478,482,494
+34V058,Jimma University,50,370,378,385
+20M087,Ashkelon Academic College,86,487,490,503
+10N413,Universidade Estadual do Maranhão,212,377,384,391
+60J033,University of Missouri - Saint Louis,50,521,523,538
+21R187,Dillard University,67,396,403,411
+39K922,Shizuoka University,686,437,442,452
+26J407,Yan Shan University,212,509,511,525
+58N664,Taurida National V.I.Vernadsky University,75,358,366,373
+56K853,Urmia University of Medical Sciences,17,283,294,297
+95M415,Seoul Teological University,343,477,481,493
+10E204,Tokushima Bunri University,50,390,397,405
+14Q985,Paichai University,103,429,434,444
+21C318,Mendel University of Agriculture and Forestry,68,429,434,444
+26A660,Olivet College,35,311,321,325
+70A386,University of Messina,75,360,368,375
+77U633,Mayo Medical School,50,587,586,604
+50W034,Instituto Universitario de Estudios Navales y Marítimos,52,421,427,437
+16U866,National Institute of Industrial Engineering,130,424,430,440
+46E039,Faculdade Jaguariúna,125,392,399,407
+67Y600,University of Mary,81,432,437,447
+72E660,Purdue University Calumet,35,362,370,377
+85M591,Hokkaigakuen University,130,340,349,354
+23W481,"Universidad de Puerto Rico, Mayaguez",103,413,419,428
+84R523,Worcester Polytechnic Institute,81,365,373,380
+18L548,Aomori Chuoh Gakuin University,46,355,363,370
+78H486,Universidad Tecnológica del Peru,71,331,340,345
+50F939,COMSATS Institute of Information Technology,19,454,458,470
+23J200,Université de 7 Novembre à Carthage,136,517,519,534
+41Z196,Pontificia Universidad Católica Madre y Maestra (PUCMM),63,390,397,405
+78I433,Seikei University,44,416,422,432
+39I299,Khalifa University,51,397,404,412
+11W357,Kigali Independent University,50,426,431,441
+40Q393,Semera University,68,373,380,387
+15L582,University College of Saint-Boniface,627,459,463,475
+18B587,Catholic Theological Union,43,337,346,351
+74Y437,Universidad Fundepos Alma Mater,14,420,426,436
+02M864,L.N. Gumilyov Eurasian National University,63,343,352,357
+59M772,Kiev National University of Construction and Architecture,60,336,345,350
+69E638,Medical College of Wisconsin,54,410,416,425
+75P412,Guangzhou University of Traditional Chinese Medicine,71,440,445,455
+33U464,Kent State University - Trumbull,46,414,420,429
+72O330,Virginia Wesleyan College,68,470,474,486
+26P102,University of Nicosia,50,433,438,448
+95Q503,Yorker International University,48,385,392,400
+95Z146,Mamoun Private University for Science and Technology,10,362,370,377
+58A011,Beth-El College of Nursing and Health Sciences,113,371,379,386
+37E012,West Bengal University of Technology,116,334,343,348
+33Q463,Koya University (Kurdistan Region),16,412,418,427
+41W033,NTB Interstate University of Applied Sciences of Technology,343,431,436,446
+66I747,Kagawa University,212,400,406,415
+33O656,Columbia Southern University,32,406,412,421
+88B916,Hokkaido University,54,461,465,477
+62R152,Luxun Academy of Fine Art,31,460,464,476
+39N075,Africa University,192,424,430,440
+07X603,Standford University,287,432,437,447
+18J036,Universidad Experimental Felix Adam,641,483,486,498
+77U549,National Taitung Teachers College,136,299,309,313
+92A657,Graceland College,105,463,467,479
+97C871,Hamamatsu University,63,428,433,443
+47Y298,College of Technology at Dammam,75,379,386,393
+73I991,Weill Medical College of Cornell University,19,340,349,354
+88P551,Seton Hill College,43,348,356,362
+50Z649,Africa Nazarene University,60,409,415,424
+29Z115,National Taipei College of Nursing,287,352,360,367
+57K116,International Hotel Management Institute,14,373,380,387
+63G182,"Fairleigh Dickinson University, Teaneck-Hackensack Campus",48,497,500,513
+99I449,Columbia Commonwealth University,17,366,374,381
+20D201,City University of Hong Kong,71,469,473,485
+06C668,State University of New York at Stony Brook,103,372,380,387
+45F691,Göteborg University,15,484,487,500
+25Q291,Hendrix College,19,303,313,317
+32X652,Urmia University of Medical Sciences,48,387,394,402
+16L358,Campus Bio-Medico University of Rome,50,453,457,469
+21C889,Kaboora Institute of Higher Education,125,420,426,436
+78B457,Miyagi Gakuin Women's College,14,408,414,423
+14S726,Universitas Proklamasi 45,49,502,505,518
+36G297,Hebei Normal University,40,481,484,496
+51S876,"Academy of Music ""Georghe Dima"" Cluj-Napoca",14,395,402,410
+95T871,Karachi Institute of Information Technology,49,462,466,478
+07M268,Perm State Pedagogical University,18,410,416,425
+11R188,Webb Institute,41,476,480,492
+11K633,National College of Art and Design,192,481,484,496
+66U838,Ningxia Medical College,121,359,367,374
+46G837,Volgograd State Technical University,42,456,460,472
+50A259,Universite Amadou Hampaté Ba,16,328,337,342
+42H408,"Sikkim Manipal University of Health, Medical and Technological Sciences",686,532,534,549
+18K519,University of Molise,50,452,457,468
+47J731,University of Jammu,44,383,390,398
+22I958,King Abdullah University of Science and Technology ,40,401,407,416
+96S867,University of Jyväskylä,67,395,402,410
+97U850,Pennsylvania State University,641,360,368,375
+37S746,Eureka College,32,349,357,364
+48U317,Durham College,75,456,460,472
+96W479,Roehampton University of Surrey,32,403,409,418
+94G047,Saitama University,71,375,382,389
+96F011,Temple University School of Podiatric Medicine,50,431,436,446
+00G212,Universidad Nacional de La Matanza,44,302,312,316
+30O623,Vrije Universiteit Brussel,22,445,450,460
+88J838,Universidad Autónoma de la Ciudad de México,66,327,336,341
+11D774,International University for Science & Technology ,48,315,325,330
+28Z784,Delaware Valley College,50,321,330,335
+29A923,Universidade Estadual do Vale do Acaraú,103,385,392,400
+03Q184,Herzen State Pedagogical University of Russia,50,385,392,400
+45R699,Emily Carr Institute of Art + Design,14,398,405,413
+32D800,Bentley College,50,349,357,364
+42Q435,University of Arkansas at Pine Bluff,1047,506,508,522
+89M500,University of the Punjab,121,532,534,549
+94W752,Universidade da Beira Interior,35,440,445,455
+77N304,Western Kazakhstan Agricultural University,1047,425,431,441
+82X551,Johnson Bible College,22,390,397,405
+99L765,Aimst University,17,413,419,428
+32L727,Texas Woman's University,54,391,398,406
+41G937,Shumei University,87,438,443,453
+70T633,Universidade do Estado de Santa Catarina,343,323,332,337
+59A827,Universitas Kristen Petra,63,390,397,405
+16H903,University of Wisconsin - Oshkosh,60,409,415,424
+72L569,Universidad Nacional de Rosario,60,437,442,452
+21G917,Hochschule für Gestaltung und Kunst Zürich,67,390,397,405
+26T087,University of Ostrava,86,403,409,418
+80O958,University of Performing Arts in Bratislava,71,429,434,444
+81D010,Philosophisch-Theologische Hochschule SVD Sankt Augustin,105,423,429,439
+01L718,Qom University of Technology,130,431,436,446
+63V252,Barat College,627,367,375,382
+09R135,Comilla University,63,472,476,488
+76J526,Sakarya University,103,464,468,480
+76K368,Universidad Privada Boliviana,60,338,347,352
+56N050,Ural Academy of Public Administration,71,520,522,537
+61K396,FTMS Global Academy,54,420,426,436
+93O646,Muhlenberg College,71,406,412,421
+42B053,Fachhochschule Deggendorf,81,357,365,372
+27L423,Centre Universitaire de Technologie,24,387,394,402
+71N094,Universidade Federal Rural do Rio de Janeiro,66,466,470,482
+37J612,West Virginia State College,54,539,540,555
+13S781,Chongqing Technology and Business University,24,413,419,428
+67U425,Universitas Bhayangkara Jakarta Raya,57,370,378,385
+55E302,Staffordshire University,13,339,348,353
+39H508,University of Perugia,15,361,369,376
+84Y461,Universidad Autónoma Metropolitana - Azcapotzalco,87,331,340,345
+54M013,Botswana College of Agriculture,92,366,374,381
+62I656,North Ossetian State University,627,420,426,436
+22G438,Academy of Economics in Cracow,212,390,397,405
+07Z868,Jiangxi University of Finance and Economics,49,430,435,445
+16R662,University of Mashhad Pnu,22,478,482,494
+34G824,Eurasian Institute of market,68,460,464,476
+28F645,University of Connecticut at Stamford,14,420,426,436
+77D408,University of Dodoma,87,348,356,362
+43N344,British University in Dubai,627,324,333,338
+75H354,Nawroz University,86,390,397,405
+80V154,Medizinische Universität Lübeck,67,397,404,412
+22Q508,The New College,50,441,446,456
+21J391,University of Pula,66,462,466,478
+86Q400,Yaroslavl International University of Business and New Technologies,60,385,392,400
+16R482,Clarkson College,19,435,440,450
+17P065,Universidad Adventista de Chile,302,380,387,394
+78P453,Cyprus International Institute of Management (CIIM),13,314,324,328
+06H384,"Indian Institute of Technology, Hyderabad",641,425,431,441
+01N471,St. Petersburg StateMechnikov  Medical Academy,63,505,508,521
+62O368,Point Park College,50,411,417,426
+53D025,Skadron College,46,357,365,372
+02Z659," Akanu Ibiam Federal Polytechnic, Unwana",641,388,395,403
+11G642,University of Bolton,103,436,441,451
+96T826,University of West Hungary,60,323,332,337
+69Q841,Brest State University,40,357,365,372
+59I592,Institut Supérieur de Management et de Technologie (MATCI),22,425,431,441
+87R480,Bluefield College,1047,426,431,441
+69I273,University of Warsaw,686,349,357,364
+83A254,Beijing Polytechnic University,54,407,413,422
+45Q236,Guilford College,627,403,409,418
+20N345,Universidad Pontificia de Salamanca,81,245,257,258
+98G103,Tabriz Islamic Art University,287,270,281,283
+82V397,Universidad de Chiclayo,71,422,428,438
+71S791,Addis Ababa University,31,361,369,376
+34B076,Lake Superior State University,86,421,427,437
+65Q381,Ecole Polytechnique,212,466,470,482
+35N969,Miami University of Ohio,71,538,539,554
+03O964,"Davenport College of Business, Kalamazoo",48,324,333,338
+98I950,South China University,125,266,278,280
+42B908,Universitas 17 Agustus 1945 Banyuwangi,13,386,393,401
+82L517,Ateneo de Davao University,43,424,430,440
+04L364,University of Detroit Mercy,22,453,457,469
+87B774,Aichi Gakuin University,90,405,411,420
+96D222,Universidad Braulio Carrillo,22,390,397,405
+67A186,Concordia University College of Alberta,92,330,339,344
+32U506,Texas A&M University - Commerce,60,339,348,353
+40U339,Yazd University,90,414,420,429
+93L087,"California State University, San Bernadino",60,437,442,452
+87Q705,Universidad del Aconcagua,32,399,406,414
+64S586,Toho College of Music,18,418,424,434
+23A664,Collegium Civitas,343,524,526,541
+84I321,Institut National Polytechnique de Lorraine,641,436,441,451
+37O119,Samara State Technical University,14,369,377,384
+38W058,Jissen Women's University,86,366,374,381
+90Q647,Christian-Albrechts-Universität Kiel,75,424,430,440
+48M640,University of Northern Iowa,13,464,468,480
+83Z254,College of Busniess Admnistration,75,482,485,497
+11Y400,Birsa Agricultural University,17,389,396,404
+01Y544,"London School of Economics and Political Science, University of London",22,350,358,365
+14B229,Webb Institute,10,371,379,386
+39M947,Spartan University of Health Sciences,686,372,380,387
+85N464,Hogeschool Inholland,60,364,372,379
+30A844,Goa University,90,329,338,343
+76Z749,Hong Kong Polytechnic University,90,338,347,352
+25G385,University of Stellenbosch,60,394,401,409
+12V150,Hokkaido Information University,75,376,383,390
+26N093,Agricultural University of Szczecin,50,423,429,439
+10U613,Bellevue University,63,441,446,456
+02S002,Tartu Health Care College,32,361,369,376
+18I008,Institut des Hautes Etudes de Management,66,472,476,488
+31R888,Universitas Amir Hamzah,14,396,403,411
+51D315,"Indian Institute of Technology, Delhi",66,346,355,360
+73S083,University Of Medical Sciences & Technology (UMST),75,332,341,346
+72S919,Mzumbe University (Chuo Kikuu Mzumbe),50,424,430,440
+07U525,Changchun Teachers College,46,407,413,422
+60M751,Sokoine University of Agriculture,13,432,437,447
+05D796,University of Adelaide,287,440,445,455
+10P005,University of Gastronomic Sciences,87,434,439,449
+56J306,Coker College,53,421,427,437
+88S052,Universidade Eduardo Mondlane,43,428,433,443
+14X569,Gemsville Technical University,343,389,396,404
+55N793,Hochschule für Jüdische Studien Heidelberg,13,453,457,469
+82P450,Crown College,50,386,393,401
+65C436,Shanghai Institue of Foreign Trade,13,346,355,360
+85T783,Banat's University of Agricultural Sciences,287,436,441,451
+06R486,Taganrog State University of Radioengineering,50,342,351,356
+22A474,Poznan School of Banking,121,431,436,446
+03R019,Universidad Católica del Uruguay,35,410,416,425
+84Y404,University of Phoenix,53,402,408,417
+61M077,Hemchandracharay North Gujarat University,397,336,345,350
+07Q514,Wesley College Mississippi,10,465,469,481
+73N850,Nanjing University of Traditional Chinese Medicine,54,439,444,454
+64D639,"Universidad de Artes, Ciencias y Comunicación",113,417,423,433
+61F631,Nyack College,13,336,345,350
+37G545,Lubbock Christian University,105,420,426,436
+59V033,Whittier College,113,431,436,446
+12X057,German University in Cairo,75,529,531,546
+97J997,Instituto Superior Politécnico e Universitário,87,435,440,450
+61I158,Vilnius Pedagogical University,121,407,413,422
+49X104,Loyola University of Chicago,22,505,508,521
+58A420,Fakir Mohan University,343,418,424,434
+31C624,Huron University College,18,331,340,345
+04T841,Université de Metz,63,492,495,508
+16Q515,Communication University of China,67,381,388,395
+17E395,Shandong University of Science and Technology,125,501,504,517
+26F987,Universidad Popular del Cesar,43,402,408,417
+14T410,Sang Myung University,125,339,348,353
+31L679,Université Lumiére (Lyon II),287,374,381,388
+86R842,Fachhochschule Neubrandenburg,42,357,365,372
+04N761,Slobomir P Univerzitet,50,304,314,318
+91H398,Hormozgan University of Medical Sciences,49,350,358,365
+01J221,The Naropa Institute,66,406,412,421
+23V087,Norwegian University of Science and Technology,51,395,402,410
+30Y766,Bartlesville Wesleyan College,22,445,450,460
+06L944,Sripatum University,71,384,391,399
+40S000,University of Turku,10,305,315,319
+26O827,Bethany College California,63,344,353,358
+65H021,Universidad Central del Valle del Cauca,63,481,484,496
+89J686,Covenant College,54,507,509,523
+01D237,Tata Institute of Social Sciences,13,460,464,476
+86O187,North Carolina School of the Arts,50,361,369,376
+47J560,Kyoto Tachibana Women's University,46,464,468,480
+10L289,Baku State University,41,402,408,417
+66M823,Al-Azhar University of Gaza,104,420,426,436
+55F308,Tallinn University,44,386,393,401
+23T184,Universidade Camilo Castelo Branco,192,394,401,409
+72R891,Université M'hamed Bouguerra de Boumerdes,71,333,342,347
+46G453," Akanu Ibiam Federal Polytechnic, Unwana",71,274,285,287
+86D405,International School of Management in Prešov,54,434,439,449
+14A984,Universitas Tidar Magelang,87,439,444,454
+49D725,University of New Orleans,41,463,467,479
+38K110,Universidad Jóse Vasconcelos,46,424,430,440
+00Q426,Miles College,71,444,449,459
+20W727,Vilnius Academy of Arts,10,312,322,326
+73Z717,College of DuPage,18,447,452,462
+27D759,Universidad Técnica de Oruro,24,395,402,410
+31S388,Joetsu University of Education,57,345,354,359
+10L437,University of Nis,63,451,456,467
+09J675,Universidade Internacional Lisboa,63,440,445,455
+09N647,Silla University,54,423,429,439
+62X998,Instituto Tecnológico de Costa Rica,212,415,421,430
+09N097,Qinghai University,105,528,530,545
+86L385,Kurashiki Sakuyo University,46,379,386,393
+01K454,Universidad del Norte,86,381,388,395
+95G468,Université Alioune Diop de Bambey,10,403,409,418
+55G074,Pwani University,71,383,390,398
+65Z583,Ittihad University,14,362,370,377
+21X531,Penang International Dental College,71,390,397,405
+17G498,Pavol Jozef Safarik University in Kosice,50,342,351,356
+53R097,Maranatha Baptist Bible College,627,391,398,406
+77U856,Ernst-Moritz-Arndt Universität Greifswald,13,434,439,449
+63E857,Universidade de Vila Velha,49,339,348,353
+37R617,The Scripps Research Institute,90,348,356,362
+30X846,"Academy of Arts ""George Enescu"" Iasi",627,353,361,368
+52D120,St. Petersburg State Pediatric Medical Academy,105,471,475,487
+11D590,Universidade Independente de Angola,50,290,301,304
+88Z279,Centro Universitario de Occidente,50,442,447,457
+36O982,Martin Methodist College,104,356,364,371
+10V978,Bow Valley College,32,341,350,355
+82H070,Kazan State University of Medicine,22,395,402,410
+19U204,Tongji Medical University,50,365,373,380
+92I117,Universidad Técnica del Norte,113,419,425,435
+49S781,Viterbo State University,22,343,352,357
+87C401,"University of Houston, Victoria",17,478,482,494
+95D008,Adventist University of Africa,10,559,559,576
+11C549,Shantou University,57,398,405,413
+77G870,Harding University Graduate School of Religion,103,435,440,450
+50U904,Saratov State Technical University,87,379,386,393
+02T004,International Hotel Management Institute,71,458,462,474
+61F159,Central South University,10,376,383,390
+85F478,Dongguk University,192,452,457,468
+88B389,Al Rafidain University College,22,525,527,542
+67Z781,Universidad Nacional Experimental del Táchira,22,377,384,391
+94P296,Athabasca University,121,363,371,378
+24D602,Seoul National University of Technology,52,334,343,348
+19A993,Harvey Mudd College,10,364,372,379
+94G431,Université de Toliary,287,438,443,453
+62M726,Osaka University of Pharmaceutical Sciences,50,437,442,452
+63R955,University of South Carolina - Aiken,22,392,399,407
+79Q231,Muadzam Shah Polytechnic,81,415,421,430
+35L000,Ecole Nationale Supérieure de Physique de Strasbourg,116,402,408,417
+98I960,Culver-Stockton College,63,449,454,464
+72R597,National University of Defense Technology,343,460,464,476
+37V178,Université de Skikda,68,365,373,380
+63S175,Pacific International College,397,481,484,496
+50H506,American University of Tirana,212,494,497,510
+77D925,Mogadishu University,86,460,464,476
+87F216,"Johnson & Wales University, Charleston",50,395,402,410
+43E061,"University of Perpetual Help, System Dalta",75,385,392,400
+62L596,Arlington Baptist College,87,454,458,470
+32J271,Biysk State Padagogical University after V.M. Shukshin ,75,383,390,398
+59Y613,Philosophisch-Theologische Hochschule Sankt Georgen,627,422,428,438
+14T417,Yangtze Normal University,92,391,398,406
+11B098,IASE (Institute of Advanced Studies) Deemed University,686,421,427,437
+73B633,National Pingtung University of Science and Technology,46,457,461,473
+57D104,"National American University, Kansas City",68,458,462,474
+42Y797,Musashino Women's University,1047,374,381,388
+52C530,"Universidad de Puerto Rico, Bayamon",50,335,344,349
+77O526,Escuela Bancaria y Comercial,49,417,423,433
+56J411,Aga Khan University,104,249,261,263
+16C295,Walailak University,40,435,440,450
+81E124,Kankakee Community College,41,421,427,437
+88I442,Fukuyama University,22,390,397,405
+46T927,Ufa State Petroleum Technological University,343,366,374,381
+49H698,Whitman College,71,405,411,420
+26H819,University Institute of Naval Studies,32,510,512,526
+32W187,Hai Duong University,16,509,511,525
+78Z886,Universitas Persada Indonesia Y.A.I,103,513,515,529
+73M925,Tamil Nadu Dr. Ambedkar Law University,66,427,432,442
+34W674,Universidad Privada Sergio Bernales,68,426,431,441
+16X593,"National Institute of Technology, Calicut",17,478,482,494
+41Y686,Western International University,71,441,446,456
+74C149,Pacific Northwest College of Art,41,353,361,368
+72D451,Mae Fah Luang University ,66,298,308,312
+05H034,Heilongjiang University,397,415,421,430
+47H815,Bamiyan University,53,306,316,320
+42X714,Murni Nursing College,22,410,416,425
+46V641,Veer Surendra Sai University of Technology,44,384,391,399
+58Y822,Bahcesehir University,81,483,486,498
+79Q315,Universidad de Alcalá de Henares,86,423,429,439
+41U318,University of Saint Joseph,130,326,335,340
+35T519,University of Kuopio,44,368,376,383
+44E243,Westminster College New Wilmington,54,396,403,411
+68C480,Université Pierre et Marie Curie (Paris VI),71,329,338,343
+51L520,Bakhtar University,35,534,535,550
+01D356,Kuban State University of Agriculture,105,316,326,331
+06P952,Far Eastern State Technical Fisheries University,71,370,378,385
+16T485,Allegheny College,81,361,369,376
+67M656,University of Dammam,50,434,439,449
+37V552,Universidade Estadual do Norte Fluminense,16,372,380,387
+45W596,Louisiana College,31,461,465,477
+85H574,"Islamic Azad University, Maybod",121,344,353,358
+45C518,Glenville State College,67,435,440,450
+33S311,SMK Fomra Institute of Technology,192,269,280,282
+23K068,Islamic University of Technology,75,371,379,386
+60P468,Lankaran State University,22,388,395,403
+12A258,Poznan School of Banking,14,414,420,429
+08F834,"Arab Open University, Kuwait Branch",40,332,341,346
+76H913,Royal Danish School of Pharmacy,16,382,389,396
+47G966,Universidade Federal do ABC,10,503,506,519
+77F465,Instituto Nacional de Matemática Pura e Aplicada - IMPA,35,356,364,371
+84Z747,Technical University of Radom,63,430,435,445
+42F413,Universidad Tecnológica de Santiago,103,428,433,443
+34Q767,Tougaloo College,22,467,471,483
+93F708,King's College,90,314,324,328
+89M512,Uppsala University,105,420,426,436
+16T004,University Oil- Gas Ploiesti,10,333,342,347
+15G790,Emily Carr Institute of Art + Design,53,354,362,369
+15F715,Richmond University - The American International University in London,87,383,390,398
+93P140,Hebei Academy of Fine Art,48,470,474,486
+32J567,L.N. Gumilyov Eurasian National University,397,415,421,430
+57P056,Framingham State College,13,324,333,338
+24Y424,Rust College,44,317,327,332
+79O998,"National American University, Kansas City",212,379,386,393
+35J408,Université de Douala,63,394,401,409
+89Y991,Universidad de Granada,19,455,459,471
+48M819,Intercollege,71,340,349,354
+80T781,Keene State College,66,444,449,459
+85X348,Thomas Aquinas College,54,362,370,377
+61N680,Notre Dame Women's College,46,524,526,541
+67V786,Universidad Privada de Santa Cruz de la Sierra,60,324,333,338
+11X479,National University,48,388,395,403
+87I479,Wirtschaftsuniversität Wien,627,432,437,447
+25H766,Southwestern University,63,404,410,419
+25U000,National Pedagogical University M. Dragomanov ,71,471,475,487
+74K050,Ecole Supérieure des Sciences et Technologie de l'Ingénieur de Nancy,50,388,395,403
+01H162,St. Anselm College,22,353,361,368
+54O962,Cairo University,15,330,339,344
+17G857,Ecole Nationale Vétérinaire de Toulouse,87,465,469,481
+21Z855,University of Berne,13,394,401,409
+75I992,Universidad Católica Cardenal Raúl Silva Henríquez,105,445,450,460
+14P421,Al Imam Al-Ouzai University,18,434,439,449
+69Q783,Far Eastern University,116,478,482,494
+15Q590,Dunya Institute of Higher Education,44,404,410,419
+20Y541,Rajendra Agricultural University,66,442,447,457
+73M165,Universitas Dr. R. Moestopo,686,447,452,462
+23C471,Western University,66,353,361,368
+84Q450,Taegu University,32,493,496,509
+07J716,Moscow State University of Environmental Engineering,49,361,369,376
+77C684,Berean University of the Assemblies of God,121,396,403,411
+79E581,Universidad de la Marina Mercante,125,430,435,445
+09E027,King Mongkut's University of Technology North Bangkok,22,460,464,476
+04R618,"Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft",71,325,334,339
+02X731,Uniformed Services Universty of the Health Sciences,81,453,457,469
+18I599,Ohio Dominican College,50,357,365,372
+73F282,St. Louis College of Pharmacy,18,425,431,441
+55C427,RKDF University,116,441,446,456
+98A247,Rani Durgavati University,15,340,349,354
+53Y102,"Universidad CAECE, Buenos Aires",81,359,367,374
+78B068,"Universidad de Puerto Rico, Carolina",63,481,484,496
+29I924,Coker College,16,357,365,372
+90I749,Fukui Medical School,116,398,405,413
+62R644,Vikrama Simhapuri University,14,461,465,477
+89Z005,"Victoria University Toronto, University of Toronto",686,365,373,380
+47B150,University of Essex,63,379,386,393
+39M831,Harding University Graduate School of Religion,52,327,336,341
+12N688,Universitas Nusa Cendana,60,367,375,382
+68P955,Iowa Wesleyan College,66,342,351,356
+46K075,Kagoshima Women's College,71,353,361,368
+45Q355,Montserrat College of Art,60,384,391,399
+27R699,Avicenna International College,50,294,304,308
+42X991,Istituto Universitario di Studi Superiori,43,455,459,471
+25C183,Gomal University,22,450,455,466
+97H658,Universidad Tecnologica de la Mixteca,50,416,422,432
+48S443,Babson College,24,423,429,439
+33V378,Université d'Antananarivo,32,296,306,310
+57V649,Libya Open University,113,259,271,273
+83M739,Jobu University,35,310,320,324
+85B314,St. Petersburg State Forest-Technical Academy,90,431,436,446
+34C487,Ecole Supérieure de Commerce de Toulouse,63,353,361,368
+60Q975,Petronas Technology University,13,485,488,501
+08P378,Universidade Candido Mendes,60,355,363,370
+20X229,Imo State University,31,334,343,348
+22U483,Eötvös Lorand University,35,392,399,407
+49Z437,"Universidad Salvadorena ""Alberto Masferrer""",67,360,368,375
+19T630,FAAP - Fundação Armando Alvares Penteado,75,517,519,534
+92T702,University of Parma,68,400,406,415
+85C786,"City University of New York, Brooklyn College",90,370,378,385
+97L463,Somaliland University of Technology,19,416,422,432
+82W611,Armenian State University of Economics,35,336,345,350
+47H932,Prague International University,287,425,431,441
+25E005,Gwangju Catholic College,10,347,355,361
+47L722,Bangalore University,192,358,366,373
+57X791,University of Bologna,50,369,377,384
+96H700,Universität des Saarlandes,46,412,418,427
+23O717,Budapest Buddhist University,32,370,378,385
+04J670,Shih Hsin University,113,365,373,380
+33H367,State University of New York College at Cortland,10,360,368,375
+50X657,University of Georgia,212,317,327,332
+43S246,Antioch University Santa Barbara,22,426,431,441
+17V644,Hebei Agricultural University,57,322,331,336
+10P166,Lausanne Hotel School (EHL),16,487,490,503
+40N550,Kolej Universiti Insaniah,130,382,389,396
+11Y575,Centre d'Etudes Supérieures Industrielles Paris,22,347,355,361
+90T883,University of National and World Economy,287,469,473,485
+38L441,Islamic University in Uganda,41,449,454,464
+77X989,Marist College,22,305,315,319
+96A087,Mimasaka Women's College,627,447,452,462
+69A449,University of Montenegro,641,360,368,375
+54K184,Wilson College,24,413,419,428
+52C069,"Bowling Green State University, Firelands",22,426,431,441
+01M436,Shreemati Nathibai Damodar Thackersey Women's University,90,495,498,511
+30T241,National Ilan University,343,353,361,368
+10O957,Tarleton State University,29,417,423,433
+21G082,Universidad Abierta Para Adultos,29,351,359,366
+35R687,Rock Valley College,75,333,342,347
+82S302,University of New York in Prague,130,514,516,530
+83Y819,Iwate University,54,391,398,406
+50I507,Al Madinah International University,15,328,337,342
+15C521,Ecole Supérieure de Commerce de Paris,22,427,432,442
+99E331,Odessa National Marine University,22,451,456,467
+62V847,St. Norbert College,63,312,322,326
+82R023,Universitas Mulawarman,192,474,478,490
+99N881,Forest Research Institute Dehradun,86,469,473,485
+85C328,Hartford College for Women,60,305,315,319
+95Q812,Universidad de Cuenca,17,339,348,353
+53W817,University of Palestine,13,451,456,467
+63P564,James Cook University of North Queensland,71,419,425,435
+98W011,Southwest Agricultural University,71,489,492,505
+22Q922,"Universidad ""Adolfo Ibañez""",49,436,441,451
+83V925,Keimyung University,192,346,355,360
+37B292,Livingstone College,192,387,394,402
+28K988,Carroll College Helena,105,489,492,505
+96D365,Montserrat College of Art,287,348,356,362
+17Z918,Universidad Autonoma Monterrey,13,391,398,406
+06I784,Ecole Nationale Supérieure de Physique de Marseille,18,536,537,552
+03K066,Hampton University,113,303,313,317
+35F652,Texas Christian University,90,370,378,385
+91J016,Durham College,686,456,460,472
+52O702,City University,71,375,382,389
+74U184,Bangladesh Open University,15,434,439,449
+98W194,"École nationale d'administration publique, Université du Québec",48,458,462,474
+24W166,Grodno State Medical University,31,490,493,506
+13O250,Koshien University,75,503,506,519
+29L459,Knightsbridge University,212,531,533,548
+77C579,University of Minnesota - Crookston,44,447,452,462
+02R933,Universitas Indonusa Esa Unggul,192,374,381,388
+33Z336,Universidad Nacional de Ingeniería,71,396,403,411
+64Q394,"Islamic Azad University, Shirvan",302,324,333,338
+13Y271,COSMIQ Institute of Technology,103,401,407,416
+20F992,University of Cape Coast,63,340,349,354
+53T330,Kuala Lumpur Metropolitan University,48,357,365,372
+24F355,National University of Defense Technology,90,451,456,467
+50P074,Georgia Southwestern University,29,450,455,466
+96U642,University of Kufa,52,449,454,464
+69C589,Medical College of Ohio,16,295,305,309
+29K183,October 6 university,686,398,405,413
+01W417,Tokyo University of Pharmacy and Life Science,81,360,368,375
+01F266,"Institute of Teachers Education, Batu Lintang",46,400,406,415
+04E970,Union Theological Seminary (UTS),81,283,294,297
+21K246,Universität Mannheim,57,362,370,377
+66N861,Escuela Colombiana de Ingeniería Julio Garavito,53,308,318,322
+61Y107,Eastern Conservatory of Music,343,298,308,312
+16O474,RMIT International University Vietnam,17,435,440,450
+47O573,Fort Valley State College,35,456,460,472
+61F721,Ivano-Frankivsk National University of Oli and Gas,287,464,468,480
+93W331,TPM College,14,341,350,355
+99R268,University of Zilinska,52,406,412,421
+16B400,University of Nevada - Reno,68,362,370,377
+59T519,Franciscan University of Steubenville,46,473,477,489
+36P245,Universidade São Francisco,641,346,355,360
+21O582,Tyumen State University,686,522,524,539
+20R435,Université René Descartes (Paris V),17,396,403,411
+08Y936,Universidad de Gerona,75,463,467,479
+59I495,Rostov State University,343,403,409,418
+52H429,The Cooper Union for the Advancement of Science and Art,16,527,529,544
+21N567,Saurashtra University,87,376,383,390
+37Q185,Centro Universitario de Occidente,46,458,462,474
+37X003,Peru State College,87,413,419,428
+43K501,Universidad Autónoma de Sinaloa,86,424,430,440
+64Q401,Langara College,75,363,371,378
+40U604,Technological Education Institute of Thessaloniki,48,507,509,523
+18U673,Universidad Santa Paula,50,479,482,494
+92E215,Tokyo Women's Medial College,50,273,284,286
+45A010,Dokkyo University,63,371,379,386
+33V674,Universidad de Norteamerica,29,468,472,484
+42Z986,"Shobhit University, Meerut",212,370,378,385
+79M930,Universidad de La Laguna,104,387,394,402
+28C386,Berklee College of Music,302,330,339,344
+03D007,Yildiz Technical University,31,386,393,401
+85I890,Westbrook University ,14,367,375,382
+35N990,University of Kuopio,51,417,423,433
+49Y194,University of Michigan - Flint,68,458,462,474
+80P048,International University College,103,459,463,475
+61A579,Universidad Estatal a Distancia,48,408,414,423
+61A522,St. Petersburg State Mountain Institut,10,398,405,413
+26C624,Lansbridge University,50,462,466,478
+84Q968,EMESCAM - Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória,130,369,377,384
+31A147,Aljouf University,287,266,278,280
+99P025,Hogeschool voor Wetenschap & Kunst,103,517,519,534
+62R996,Alvernia College,19,434,439,449
+82C738,Government College University Faisalabad,87,446,451,461
+52H251,Kansas City Art Institute,104,411,417,426
+72W027,Zarka Private University,63,444,449,459
+95O890,Dublin Institute for Advanced Studies,48,347,355,361
+02P904,Trinity University School of Medicine,22,429,434,444
+08S419,Shippensburg University of Pennsylvania,19,396,403,411
+01K276,Taraba State University,50,368,376,383
+67G804,Zimbabwe Open University,40,356,364,371
+00G698,Niigata University of Management,86,444,449,459
+57D259,Taipei Municipal Teachers College,10,330,339,344
+76F366,Wenzhou Medical College,212,392,399,407
+16E642,Palacky University,44,337,346,351
+03W823,University of Alaska - Southeast,302,277,288,290
+28F082,Institut Catholique d'Arts et Métiers Nantes,63,373,380,387
+24C886,Tver State Medical Academy,29,361,369,376
+65T670,Kyoto Seika University,41,427,432,442
+61Q701,Central Academy of  Fine Art,71,446,451,461
+16T016,American InterContinental University - Georgia,50,432,437,447
+68I143,Gediz University,22,405,411,420
+14L924,Université de Monastir,63,485,488,501
+13E600,Royal University of Agriculture,32,483,486,498
+80A501,University of Alabama - Tuscaloosa,10,377,384,391
+49O663,Shanghai Second Medical University,17,352,360,367
+57M369,College of Telecommunication & Information ,54,344,353,358
+61G797,Singapore Management University,50,344,353,358
+34X769,Balikesir University,192,402,408,417
+97X780,Université Pierre et Marie Curie (Paris VI),63,445,450,460
+61F900,Technical University of Sofia,53,339,348,353
+79C187,University “Pavaresia” Vlore,60,377,384,391
+90O522,Osaka Gakuin University,63,327,336,341
+32U647,Universidad de Huelva,71,329,338,343
+41V258,Kangnung National University,397,343,352,357
+77R797,Universidad NUR,212,443,448,458
+12C296,"Arizona State University, Tempe Campus",92,343,352,357
+39U035,London School of Jewish Studies,60,442,447,457
+81B729,Presbyterian University College,686,482,485,497
+11Y246,Volgograd State University,125,378,385,392
+36X284,Université d'Artois,627,366,374,381
+62T851,Ecole des Ingénieurs de la Ville de Paris,16,416,422,432
+92X942,Zhongnan University of Finance and Economics,68,476,480,492
+03W105,University of Arkansas at Monticello,86,416,422,432
+75Y960,Universitas Negeri Yogyakarta,136,411,417,426
+61E312,Universidade Estadual de Santa Cruz,60,336,345,350
+92A630,Suleyman Demirel University,75,353,361,368
+04P186,Chuvash State University,40,412,418,427
+02S289,Universidad de Las Palmas de Gran Canaria,18,301,311,315
+03L884,Ho Chi Minh City University of Technology,116,345,354,359
+19M088,Lead City University of Ibadan,87,409,415,424
+10K407,"Islamic Azad University, Aliabad ",75,299,309,313
+67R640,Tabor College,44,453,457,469
+67L162,Bahria University,121,368,376,383
+99N783,"Hochschule Anhalt (FH), Hochschule für angewandte Wissenschaften",302,463,467,479
+06P323,"Islamic Azad University, Boukan",81,434,439,449
+52B544,Universidade do Sul de Santa Catarina,49,331,340,345
+30M784,Escuela Politécnica del Ejercito,10,335,344,349
+74U033,Andrassy Gyula German Speaking University Budapest,50,463,467,479
+62J494,Palawan State University,41,356,364,371
+70A172,Pacific Northwest College of Art,10,314,324,328
+28Y638,Vali-e-Asr University,343,303,313,317
+53Q154,Louisiana State University at Eunice,57,379,386,393
+51E441,Emanuel University,49,403,409,418
+50B832,University of Louisville,343,356,364,371
+91R161,"Moscow State Institute of Radiotechnics, Electronics and Automation (Technical University)",50,456,460,472
+50Q479,Milwaukee School of Engineering,641,334,343,348
+32L650,University of Mashhad Pnu,75,482,485,497
+84V215,Martin-Luther Universität Halle-Wittenberg,121,396,403,411
+03B942,Saratov State Medical University,54,460,464,476
+63N848,Universitas Islam Malang,57,387,394,402
+67W336,Ecole Supérieure d'Electronique de l'Ouest,50,333,342,347
+18U705,Université d'Abobo-Adjamé,212,472,476,488
+58V281,Universidad Nacional de Chimborazo,92,421,427,437
+00S249,Brigham Young University,43,344,353,358
+36X704,Dadabhoy Institute of Higher Education,192,428,433,443
+74V669,Fachhochschule für Oekonomie und Management (FOM),46,365,373,380
+77E485,Nottingham Trent University,63,342,351,356
+33R382,University of Birmingham,136,348,356,362
+98N591,Universidade de Brasília,54,414,420,429
+92P189,Auchi Polytechnic,116,364,372,379
+38O059,University of Plymouth,125,394,401,409
+66W771,Semnan University,686,373,380,387
+06X934,Qinghai Normal University,192,324,333,338
+28X858,Barcelona Graduate School of Economics,48,375,382,389
+17H637,Lamar University,32,361,369,376
+57G130,Pacific Lutheran University,32,403,409,418
+31T297,Open University of Hong Kong,66,361,369,376
+81D610,Eiilm University,63,294,304,308
+52W925,"Institute of Germanic Studies, University of London",86,469,473,485
+74F789,Prague Institute of Chemical Technology,68,400,406,415
+86M938,Alahgaff University,125,339,348,353
+29X145,Stephen F. Austin State University,68,239,252,252
+21A830,Trinity Theological Seminary,35,481,484,496
+99I775,Chulalongkorn University,10,368,376,383
+21I238,Cardinal Stefan Wyszynski University in Warsaw,32,448,453,463
+42P239,"University of Computer Studies, Yangon",50,366,374,381
+17E969,Tri-State University,48,343,352,357
+60V254,"University of California, Berkeley",13,518,520,535
+68U119,COSMIQ Institute of Technology,51,458,462,474
+16B155,Mercyhurst College,302,429,434,444
+62H525,University of Trento,44,326,335,340
+98P877,Fachhochschule Bielefeld,67,340,349,354
+58U929,Centre College,87,304,314,318
+80S850,ITT Technical Institute Fort Wayne,81,487,490,503
+41H959,Louisiana State University at Eunice,1047,542,543,558
+76S409,Stockholm School of Economics in Riga,125,334,343,348
+11V732,University of Social Welfare and Rehabilitation Scinences,44,389,396,404
+51H960,Youngstown State University,192,300,310,314
+15C096,Shiraz University,54,377,384,391
+44I598,McPherson College,14,499,502,515
+47N868,Universidad de Belgrano,105,323,332,337
+61W098,San Jose State University,302,467,471,483
+90C816,Universidad de Alicante,50,370,378,385
+37R475,University of Southeastern Philippines,15,435,440,450
+21E640,Universidad Tecnológica de El Salvador,50,486,489,502
+60B911,West Suburban College of Nursing,60,462,466,478
+57O615,Balochistan University of Engineering and Technology Khuzdar,32,311,321,325
+57R725,Boise Bible College,42,396,403,411
+93X590,Westfälische Wilhelms-Universität Münster,67,393,400,408
+01T121,South Bank University,42,288,299,302
+17G600,Palacky University,121,437,442,452
+85M849,Azerbaijan State Economic University,35,324,333,338
+24D352,Technological Education Institute of Mesologgi,40,358,366,373
+73E680,Gandhigram Rural Institute,57,411,417,426
+17A898,Peru State College,641,432,437,447
+60O586,Centro de Enseñanza Técnica Industrial,130,378,385,392
+11T710,University of Teesside,113,346,355,360
+92R681,Mohi-ud-Din Islamic University,50,467,471,483
+01H649,Laikipia University,103,408,414,423
+66M967,Universidad de Caldas,46,392,399,407
+22C652,Azerbaijan Toursim Institute,50,501,504,517
+61M857,"Concordia College, Seward",10,327,336,341
+79X905,Ningbo University of Technology,51,428,433,443
+62F603,Universidad Nacional de Tumbes,113,325,334,339
+13H493,Kyoto University,212,458,462,474
+15O524,East-West University,71,460,464,476
+88Y146,Darul Huda Islamic University,48,244,256,257
+10V389,Kharkiv State Technical University of Construction and Architecture,17,376,383,390
+23Q123,Immanuel Kant State University of Russia,31,516,518,532
+69W358,Institute of Business Management ,18,431,436,446
+24H635,Eastern University,46,381,388,395
+42A514,University of Miami,46,485,488,501
+44T129,Kabul Health Sciences Institute,24,415,421,430
+91V261,Hanazono University,60,418,424,434
+82B146,Rider University,43,417,423,433
+96D756,Government College University Lahore,48,435,440,450
+10N102,Konyang University,15,376,383,390
+13U096,Kerman Graduate University of Technology,343,329,338,343
+36O980,Tamil Nadu Veterinary and Animal Sciences University,51,418,424,434
+92N217,Omsk State Agrarian University,24,352,360,367
+12O861,Zhejiang Sci-Tech University ,46,430,435,445
+30R856,South Gujarat University,71,367,375,382
+06S938,William Jewell College,32,369,377,384
+48H812,Fachhochschule Krems,10,390,397,405
+56F260,Institute of Business & Technology,51,315,325,330
+66R876,Kazak American University,49,376,383,390
+72E827,"Islamic Azad University, Ahar",14,416,422,432
+04N037,B. S. Abdur Rahman University,57,464,468,480
+11V271,Universidad ORT Uruguay,75,294,304,308
+41N153,National University of Ireland,46,463,467,479
+23T331,Hansung University Seoul,50,409,415,424
+42H553,Asia University,121,437,442,452
+36N311,Husson College,40,381,388,395
+32D110,Kurashiki Sakuyo University,90,400,406,415
+40B187,Atlantic International University,13,499,502,515
+17R960,Eastern Washington University,50,382,389,396
+36I416,Nova Scotia Agricultural College,63,327,336,341
+67I181,Ecole Supérieure de Commerce de Marseille-Provence,18,411,417,426
+10I608,National Technical University of Athens,686,401,407,416
+02B845,"DeVry Institute of Technology, Kansas City",53,496,499,512
+56Q309,International University of Kagoshima,105,373,380,387
+28U047,Technical University of Denmark,22,410,416,425
+42Q684,Fachhochschule Bingen,641,388,395,403
+09Q436,Zhongshan University,50,421,427,437
+39I104,"DeVry Institute of Technology, Decatur",63,368,376,383
+10A993,Mendel University of Agriculture and Forestry,57,454,458,470
+69J828,Université de Cocody,13,398,405,413
+09X077,Institut Catholique de Toulouse,87,410,416,425
+35F328,University of Roorkee,57,422,428,438
+41F300,Banat's University of Agricultural Sciences,50,443,448,458
+69H755,Yaroslavl State Technical University,397,392,399,407
+92C704,Universidad Nacional del Sur,343,329,338,343
+18X153,Oslo School of Architecture,103,356,364,371
+06U327,East Delta University,113,411,417,426
+56Y627,Coventry University,121,498,501,514
+89M685,Christopher Newport University,66,443,448,458
+56J973,Ueno Gakuen College,63,486,489,502
+79O819,Lviv National University Ivan Franko,90,460,464,476
+36A556,Karadeniz Technical University,90,375,382,389
+37K460,Free University Amsterdam,35,403,409,418
+74R060,St. Andrew Georgian University,51,404,410,419
+91C139,National Tainan Teachers College,41,461,465,477
+60N132,Universidade Castelo Branco,57,411,417,426
+52E971,Edinboro University of Pennsylvania,116,390,397,405
+53L774,Kigali Institute of Education,121,462,466,478
+36A762,Illinois Wesleyan University,13,395,402,410
+75K812,Andrew Jackson University,32,385,392,400
+63T658,Universidad de la Empresa (UDE),1047,438,443,453
+20Q107,University of Qatar,40,418,424,434
+32Y275,International College,50,386,393,401
+57C665,Dana College,32,257,269,271
+16S599,Columbia Commonwealth University,104,502,505,518
