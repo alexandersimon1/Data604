@@ -91,7 +91,7 @@ SAT_scores_mock2 <- read_csv('https://raw.githubusercontent.com/alexandersimon1/
 
 ## 4. Analysis
 
-I wasn't sure what the assignment instructions meant by profiling the data with a pivot table, but I compared the real vs mock data using descriptive statistics.
+I compared the real vs mock data using descriptive statistics.
 
 ### 4.1. Number of test takers
 
@@ -765,7 +765,7 @@ math_score_all %>%
   row_spec(6, background = "#CCCC00")
 ```
 
-Both the mean reading/writing scores were strongly correlated with the mean math scores in the new mock datasets (only `mock5` is shown).
+Both the mean reading/writing scores were strongly correlated with the mean math scores in the new mock datasets (only `mock5` reading vs math is shown).
 
 ```{r scatterplot-reading-math-mock5}
 coeff <- round(cor(SAT_scores_mock5$mean_reading_score, SAT_scores_mock5$mean_math_score, 
@@ -781,41 +781,13 @@ ggplot(SAT_scores_mock5, aes(x = mean_reading_score, y = mean_math_score)) +
   ggtitle("Mock5")
 ```
 
-```{r scatterplot-writing-math-mock5}
-coeff <- round(cor(SAT_scores_mock5$mean_writing_score, SAT_scores_mock5$mean_math_score, 
-                   method = c("pearson")), 2)
-
-ggplot(SAT_scores_mock5, aes(x = mean_writing_score, y = mean_math_score)) +
-  geom_point() +
-  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
-  xlim(200, 800) + ylim(200, 800) +  
-  geom_text(x = 550, y = 650,
-            label = paste0('r = ', coeff),
-            color = 'blue') +
-  ggtitle("Mock5")
-```
-
-In contrast, the mean reading/writing and math scores in the previous iteration of mock data were not correlated (only `mock3` is shown).
+In contrast, the mean reading/writing and math scores in the previous iteration of mock data were not correlated (only `mock3` reading vs math is shown).
 
 ```{r scatterplot-reading-math-mock3}
 coeff <- round(cor(SAT_scores_mock3$mean_reading_score, SAT_scores_mock3$mean_math_score, 
                    method = c("pearson")), 2)
 
 ggplot(SAT_scores_mock3, aes(x = mean_reading_score, y = mean_math_score)) +
-  geom_point() +
-  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
-  xlim(200, 800) + ylim(200, 800) +  
-  geom_text(x = 650, y = 425,
-            label = paste0('r = ', coeff),
-            color = 'blue') +
-  ggtitle("Mock3")
-```
-
-```{r scatterplot-writing-math-mock3, warning=FALSE}
-coeff <- round(cor(SAT_scores_mock3$mean_writing_score, SAT_scores_mock3$mean_math_score, 
-                   method = c("pearson")), 2)
-
-ggplot(SAT_scores_mock3, aes(x = mean_writing_score, y = mean_math_score)) +
   geom_point() +
   geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
   xlim(200, 800) + ylim(200, 800) +  
